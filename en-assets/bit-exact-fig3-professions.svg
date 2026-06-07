@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="660" fill="#fbfbf9"/>
+
+  <text x="600" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Every "Probabilistic" Profession Keeps Its Methodology Bit-Exact</text>
+  <text x="600" y="64" text-anchor="middle" font-size="13" fill="#666">You can't guarantee the outcome, but the methodology must be strict — LLM engineers finally arrive here</text>
+
+  <!-- Column headers -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="0" width="200" height="48" fill="#1a1a1a"/>
+    <text x="100" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Profession</text>
+    <rect x="200" y="0" width="440" height="48" fill="#888"/>
+    <text x="420" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">The outcome is probabilistic</text>
+    <rect x="640" y="0" width="440" height="48" fill="#c4453d"/>
+    <text x="860" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">But the methodology is bit-exact</text>
+  </g>
+
+  <!-- Doctor -->
+  <g transform="translate(60, 170)">
+    <rect x="0" y="0" width="200" height="100" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">Doctor</text>
+    <text x="100" y="68" text-anchor="middle" font-size="10" fill="#888">millennia of practice</text>
+    <rect x="200" y="0" width="440" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="220" y="34" font-size="13" fill="#1a1a1a">Can't guarantee curing every patient</text>
+    <text x="220" y="54" font-size="11" fill="#888">"80% flu · 15% COVID · 5% other"</text>
+    <text x="220" y="78" font-size="11" fill="#888">no doctor claims a 100% diagnosis</text>
+    <rect x="640" y="0" width="440" height="100" fill="#fff" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="660" y="34" font-size="13" fill="#1a1a1a">The diagnostic protocol must be strict</text>
+    <text x="660" y="54" font-size="11" fill="#888">same symptoms follow the same workflow</text>
+    <text x="660" y="78" font-size="11" fill="#888">deviation = malpractice</text>
+  </g>
+
+  <!-- Medical research -->
+  <g transform="translate(60, 280)">
+    <rect x="0" y="0" width="200" height="100" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="44" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a1a">Medical</text>
+    <text x="100" y="64" text-anchor="middle" font-size="16" font-weight="700" fill="#1a1a1a">research</text>
+    <text x="100" y="82" text-anchor="middle" font-size="10" fill="#888">RCT · clinical trials</text>
+    <rect x="200" y="0" width="440" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="220" y="34" font-size="13" fill="#1a1a1a">Can't guarantee a positive trial</text>
+    <text x="220" y="54" font-size="11" fill="#888">effect size, confidence interval, p-value</text>
+    <text x="220" y="78" font-size="11" fill="#888">any drug trial can fail</text>
+    <rect x="640" y="0" width="440" height="100" fill="#fff" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="660" y="34" font-size="13" fill="#1a1a1a">The RCT design must be bit-exact</text>
+    <text x="660" y="54" font-size="11" fill="#888">randomization · blinding · control group</text>
+    <text x="660" y="78" font-size="11" fill="#888">every step must be reproducible</text>
+  </g>
+
+  <!-- Judge -->
+  <g transform="translate(60, 390)">
+    <rect x="0" y="0" width="200" height="100" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">Judge</text>
+    <text x="100" y="68" text-anchor="middle" font-size="10" fill="#888">the legal system</text>
+    <rect x="200" y="0" width="440" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="220" y="34" font-size="13" fill="#1a1a1a">Can't guarantee every verdict is right</text>
+    <text x="220" y="54" font-size="11" fill="#888">"beyond reasonable doubt" &#8776; 95% threshold</text>
+    <text x="220" y="78" font-size="11" fill="#888">evidence is probabilistic, memory incomplete</text>
+    <rect x="640" y="0" width="440" height="100" fill="#fff" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="660" y="34" font-size="13" fill="#1a1a1a">Legal procedure must be strict</text>
+    <text x="660" y="54" font-size="11" fill="#888">same evidence follows the same procedure</text>
+    <text x="660" y="78" font-size="11" fill="#888">procedural breach = mistrial</text>
+  </g>
+
+  <!-- Investor -->
+  <g transform="translate(60, 500)">
+    <rect x="0" y="0" width="200" height="100" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">Investor</text>
+    <text x="100" y="68" text-anchor="middle" font-size="10" fill="#888">quant / fundamental</text>
+    <rect x="200" y="0" width="440" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="220" y="34" font-size="13" fill="#1a1a1a">Can't guarantee every investment profits</text>
+    <text x="220" y="54" font-size="11" fill="#888">expected return, Sharpe ratio, max drawdown</text>
+    <text x="220" y="78" font-size="11" fill="#888">no "this stock will definitely rise"</text>
+    <rect x="640" y="0" width="440" height="100" fill="#fff" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="660" y="34" font-size="13" fill="#1a1a1a">Backtest code &amp; risk models must be bit-exact</text>
+    <text x="660" y="54" font-size="11" fill="#888">same input must produce the same backtest</text>
+    <text x="660" y="78" font-size="11" fill="#888">or you don't know how the strategy really did</text>
+  </g>
+
+  <text x="600" y="638" text-anchor="middle" font-size="12" fill="#c4453d" font-weight="600">LLM engineers finally sit at the same table as doctors, judges, and investors — probabilistic outcome, bit-exact methodology</text>
+</svg>

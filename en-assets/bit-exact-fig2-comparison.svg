@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrowR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10" fill="#c4453d"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="800" fill="#fbfbf9"/>
+
+  <text x="600" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">Bit-Exact Didn't Die — It Leveled Up</text>
+  <text x="600" y="64" text-anchor="middle" font-size="13" fill="#666">The same engineering rigor, moved from the application layer to the harness layer</text>
+
+  <!-- Column headers -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="500" height="50" fill="#888"/>
+    <text x="250" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Old bit-exact · application layer</text>
+    <text x="250" y="46" text-anchor="middle" font-size="10" fill="#ddd">2002 · GSM-EFR codec on ADI 218x DSP</text>
+  </g>
+  <g transform="translate(620, 100)">
+    <rect x="0" y="0" width="500" height="50" fill="#c4453d"/>
+    <text x="250" y="30" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">New bit-exact · harness layer</text>
+    <text x="250" y="46" text-anchor="middle" font-size="10" fill="#fff" opacity="0.85">2026 · LLM apps on LangSmith / Braintrust / Evals</text>
+  </g>
+
+  <!-- Row 1 -->
+  <g transform="translate(0, 170)">
+    <rect x="80" y="0" width="500" height="56" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="34" font-size="13" fill="#1a1a1a">Every sample of the codec implementation</text>
+    <rect x="620" y="0" width="500" height="56" fill="#fff" stroke="#c4453d" stroke-width="1"/>
+    <text x="640" y="34" font-size="13" fill="#1a1a1a">Every record in the eval dataset</text>
+    <line x1="580" y1="28" x2="620" y2="28" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  </g>
+  <!-- Row 2 -->
+  <g transform="translate(0, 235)">
+    <rect x="80" y="0" width="500" height="56" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="34" font-size="13" fill="#1a1a1a">The reference output ITU provides</text>
+    <rect x="620" y="0" width="500" height="56" fill="#fff" stroke="#c4453d" stroke-width="1"/>
+    <text x="640" y="34" font-size="13" fill="#1a1a1a">Human-labeled ground truth</text>
+    <line x1="580" y1="28" x2="620" y2="28" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  </g>
+  <!-- Row 3 -->
+  <g transform="translate(0, 300)">
+    <rect x="80" y="0" width="500" height="56" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="34" font-size="13" fill="#1a1a1a">Output bit-exact match to reference = pass</text>
+    <rect x="620" y="0" width="500" height="56" fill="#fff" stroke="#c4453d" stroke-width="1"/>
+    <text x="640" y="34" font-size="13" fill="#1a1a1a">Statistical delta vs baseline &lt; threshold = pass</text>
+    <line x1="580" y1="28" x2="620" y2="28" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  </g>
+  <!-- Row 4 -->
+  <g transform="translate(0, 365)">
+    <rect x="80" y="0" width="500" height="56" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="34" font-size="13" fill="#1a1a1a">Run the regression test every commit</text>
+    <rect x="620" y="0" width="500" height="56" fill="#fff" stroke="#c4453d" stroke-width="1"/>
+    <text x="640" y="34" font-size="13" fill="#1a1a1a">Run the regression eval every prompt / model change</text>
+    <line x1="580" y1="28" x2="620" y2="28" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  </g>
+  <!-- Row 5 -->
+  <g transform="translate(0, 430)">
+    <rect x="80" y="0" width="500" height="56" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="34" font-size="13" fill="#1a1a1a">Stack trace down to the line</text>
+    <rect x="620" y="0" width="500" height="56" fill="#fff" stroke="#c4453d" stroke-width="1"/>
+    <text x="640" y="34" font-size="13" fill="#1a1a1a">Trace + intermediate state down to the token</text>
+    <line x1="580" y1="28" x2="620" y2="28" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  </g>
+  <!-- Row 6 -->
+  <g transform="translate(0, 495)">
+    <rect x="80" y="0" width="500" height="56" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="34" font-size="13" fill="#1a1a1a">Test set · thousands of ITU .pcm vectors</text>
+    <rect x="620" y="0" width="500" height="56" fill="#fff" stroke="#c4453d" stroke-width="1"/>
+    <text x="640" y="34" font-size="13" fill="#1a1a1a">Test set · tens of thousands of labeled records</text>
+    <line x1="580" y1="28" x2="620" y2="28" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  </g>
+  <!-- Row 7 -->
+  <g transform="translate(0, 560)">
+    <rect x="80" y="0" width="500" height="56" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="34" font-size="13" fill="#1a1a1a">Reference output never changes</text>
+    <rect x="620" y="0" width="500" height="56" fill="#fff" stroke="#c4453d" stroke-width="1"/>
+    <text x="640" y="34" font-size="12" fill="#1a1a1a">Rubric + grader model + temperature all version-locked</text>
+    <line x1="580" y1="28" x2="620" y2="28" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+  </g>
+
+  <!-- Summary box -->
+  <g transform="translate(80, 660)">
+    <rect x="0" y="0" width="1040" height="100" fill="#fff5f4" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="520" y="38" text-anchor="middle" font-size="14" font-weight="700" fill="#c4453d">Your LLM output is probabilistic, but your LLM eval pipeline must be bit-exact</text>
+    <text x="520" y="64" text-anchor="middle" font-size="12" fill="#1a1a1a">Otherwise you can't tell whether today's experiment is better or worse than yesterday's</text>
+    <text x="520" y="86" text-anchor="middle" font-size="11" fill="#888" font-style="italic">The place engineers chase rigor changed · the intensity didn't</text>
+  </g>
+</svg>

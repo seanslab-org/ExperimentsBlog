@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,0 L5,10 z" fill="#c4453d"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="720" fill="#fbfbf9"/>
+
+  <text x="550" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">2002 · Drilling Down to Bit-Exact</text>
+  <text x="550" y="64" text-anchor="middle" font-size="13" fill="#666">For three to four months, every single bit deviation meant drilling through all four layers</text>
+
+  <line x1="100" y1="90" x2="1000" y2="90" stroke="#c4453d" stroke-width="1.5"/>
+
+  <!-- Layer 1 -->
+  <g transform="translate(100, 130)">
+    <rect x="0" y="0" width="900" height="100" fill="#fff" stroke="#888" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#1a1a1a">Layer 1 · The full ITU test-vector set</text>
+    <text x="20" y="48" font-size="11" fill="#555">Input: thousands of .pcm speech files · each with its reference output bit-stream</text>
+    <text x="20" y="68" font-size="11" fill="#1a1a1a">Run codec → output bit-stream → compare bit-by-bit to reference → <tspan font-weight="700" fill="#c4453d">find the first failing vector</tspan></text>
+    <text x="20" y="88" font-size="10" fill="#888" font-style="italic">e.g. vector #347 starts deviating after frame #124</text>
+  </g>
+
+  <line x1="550" y1="240" x2="550" y2="270" stroke="#c4453d" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Layer 2 -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="900" height="100" fill="#fff" stroke="#888" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#1a1a1a">Layer 2 · Inside that failing vector · hundreds of frames</text>
+    <text x="20" y="48" font-size="11" fill="#555">Each frame = 20ms of speech · dozens of intermediate states: LPC coefficients + excitation + quantizer indices</text>
+    <text x="20" y="68" font-size="11" fill="#1a1a1a">dump every frame's intermediate state → compare to reference → <tspan font-weight="700" fill="#c4453d">find the first deviating frame</tspan></text>
+    <text x="20" y="88" font-size="10" fill="#888" font-style="italic">e.g. frame #124 · LPC coefficient a[3] off by 1 LSB</text>
+  </g>
+
+  <line x1="550" y1="390" x2="550" y2="420" stroke="#c4453d" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Layer 3 -->
+  <g transform="translate(100, 430)">
+    <rect x="0" y="0" width="900" height="100" fill="#fff" stroke="#888" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#1a1a1a">Layer 3 · Inside that frame · dozens of inner loops · hundreds of multiply-accumulates each</text>
+    <text x="20" y="48" font-size="11" fill="#555">ACELP algebraic codebook search · LPC analysis · pitch tracker, and other inner loops</text>
+    <text x="20" y="68" font-size="11" fill="#1a1a1a">dump every loop iteration's accumulator → compare to reference → <tspan font-weight="700" fill="#c4453d">find the first deviating iteration</tspan></text>
+    <text x="20" y="88" font-size="10" fill="#888" font-style="italic">e.g. algebraic codebook search · iteration #17 · 40-bit accumulator off by 1</text>
+  </g>
+
+  <line x1="550" y1="540" x2="550" y2="570" stroke="#c4453d" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Layer 4 -->
+  <g transform="translate(100, 580)">
+    <rect x="0" y="0" width="900" height="100" fill="#fff5f4" stroke="#c4453d" stroke-width="2"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#c4453d">Layer 4 · Inside that one multiply-accumulate · a basic operator's corner case</text>
+    <text x="20" y="48" font-size="11" fill="#555">L_mac, L_msu, mult_r, saturate, L_shl … dozens of ITU-defined basic operators</text>
+    <text x="20" y="68" font-size="11" fill="#1a1a1a">check that operation's boundary condition → <tspan font-weight="700" fill="#c4453d">find the root of the 1 LSB difference</tspan> → fix</text>
+    <text x="20" y="88" font-size="10" fill="#888" font-style="italic">e.g. mult_r on 0x7FFF × 0x7FFF + round: my assembly saturated one step earlier than the reference</text>
+  </g>
+
+  <text x="550" y="704" text-anchor="middle" font-size="11" fill="#444" font-style="italic">Every bit deviation = four layers down · nearly all of three-to-four months lived on this loop</text>
+</svg>
