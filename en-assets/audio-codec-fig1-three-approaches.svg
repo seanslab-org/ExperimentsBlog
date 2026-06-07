@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="900" height="580" fill="#ffffff"/>
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#1a1a1a">Three Approaches to Compression</text>
+  <text x="450" y="54" text-anchor="middle" font-size="12" fill="#555">The three roots of fifty years of codec evolution — all branches after LPC (1971)</text>
+
+  <!-- Row 1: PCM record the waveform -->
+  <g transform="translate(0, 100)">
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">&#9312; Record the waveform</text>
+    <text x="50" y="40" font-size="11" fill="#555">PCM · no compression</text>
+    <text x="50" y="58" font-size="9" fill="#888">G.711 · 1972</text>
+    <text x="50" y="76" font-size="9" fill="#888">Ancestor of the telephone</text>
+
+    <path d="M 200,40 Q 230,10 260,40 T 320,40 T 380,40 T 440,40 T 500,40" fill="none" stroke="#888" stroke-width="1.2"/>
+    <circle cx="200" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="215" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="230" cy="10" r="2.5" fill="#c4453d"/>
+    <circle cx="245" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="260" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="275" cy="58" r="2.5" fill="#c4453d"/>
+    <circle cx="290" cy="70" r="2.5" fill="#c4453d"/>
+    <circle cx="305" cy="58" r="2.5" fill="#c4453d"/>
+    <circle cx="320" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="335" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="350" cy="10" r="2.5" fill="#c4453d"/>
+    <circle cx="365" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="380" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="395" cy="58" r="2.5" fill="#c4453d"/>
+    <circle cx="410" cy="70" r="2.5" fill="#c4453d"/>
+    <circle cx="425" cy="58" r="2.5" fill="#c4453d"/>
+    <circle cx="440" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="455" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="470" cy="10" r="2.5" fill="#c4453d"/>
+    <circle cx="485" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="500" cy="40" r="2.5" fill="#c4453d"/>
+    <text x="350" y="100" text-anchor="middle" font-size="9" fill="#555" font-style="italic">8,000 samples per second · one byte each</text>
+
+    <g transform="translate(580, 0)">
+      <text x="0" y="20" font-size="13" font-weight="600" fill="#c4453d">&#8594; 64 kbps</text>
+      <text x="0" y="44" font-size="11" fill="#1a1a1a">Record the wave &#8220;as-is&#8221;</text>
+      <text x="0" y="64" font-size="10" fill="#555" font-style="italic">Like moving without packing:</text>
+      <text x="0" y="80" font-size="10" fill="#555" font-style="italic">nothing lost, but too many boxes</text>
+    </g>
+  </g>
+
+  <!-- Row 2: LPC instrument + pluck -->
+  <g transform="translate(0, 250)">
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">&#9313; Send the instrument + the pluck</text>
+    <text x="50" y="40" font-size="11" fill="#555">LPC · parametric coding</text>
+    <text x="50" y="58" font-size="9" fill="#888">CELP / GSM / G.729 / SILK</text>
+    <text x="50" y="76" font-size="9" fill="#888">Ancestor of all modern speech codecs</text>
+
+    <line x1="200" y1="40" x2="240" y2="40" stroke="#c4453d" stroke-width="2"/>
+    <circle cx="200" cy="40" r="3" fill="#c4453d"/>
+    <text x="200" y="20" text-anchor="middle" font-size="9" fill="#555">excitation</text>
+    <text x="200" y="62" text-anchor="middle" font-size="8" fill="#888">vocal cords</text>
+
+    <ellipse cx="330" cy="40" rx="68" ry="22" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="330" y="44" text-anchor="middle" font-size="10" fill="#1a1a1a">vocal tract (resonator)</text>
+
+    <line x1="398" y1="40" x2="440" y2="40" stroke="#888" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <text x="450" y="44" font-size="11" fill="#555">sound</text>
+
+    <text x="330" y="100" text-anchor="middle" font-size="9" fill="#555" font-style="italic">Don&#8217;t send the wave · send &#8220;the shape of the throat + the force of the pluck&#8221;</text>
+
+    <g transform="translate(580, 0)">
+      <text x="0" y="20" font-size="13" font-weight="600" fill="#c4453d">&#8594; 8 kbps</text>
+      <text x="0" y="44" font-size="11" fill="#1a1a1a">Send how to make it, not the sound</text>
+      <text x="0" y="64" font-size="10" fill="#555" font-style="italic">The far end has the same</text>
+      <text x="0" y="80" font-size="10" fill="#555" font-style="italic">&#8220;throat simulator&#8221; and rebuilds it</text>
+    </g>
+  </g>
+
+  <!-- Row 3: Psychoacoustic -->
+  <g transform="translate(0, 400)">
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">&#9314; Throw away the inaudible</text>
+    <text x="50" y="40" font-size="11" fill="#555">Psychoacoustics · perceptual coding</text>
+    <text x="50" y="58" font-size="9" fill="#888">MP3 / AAC / Vorbis / Opus</text>
+    <text x="50" y="76" font-size="9" fill="#888">Core of all modern music codecs</text>
+
+    <g transform="translate(200, 20)">
+      <rect x="100" y="0" width="14" height="60" fill="#c4453d"/>
+      <text x="107" y="-4" text-anchor="middle" font-size="8" fill="#c4453d" font-weight="600">strong signal</text>
+      <rect x="80" y="35" width="10" height="25" fill="#ddd"/>
+      <rect x="120" y="40" width="10" height="20" fill="#ddd"/>
+      <rect x="135" y="45" width="10" height="15" fill="#ddd"/>
+      <rect x="20" y="20" width="10" height="40" fill="#1a1a1a"/>
+      <rect x="40" y="25" width="10" height="35" fill="#1a1a1a"/>
+      <rect x="60" y="30" width="10" height="30" fill="#1a1a1a"/>
+      <rect x="160" y="35" width="10" height="25" fill="#1a1a1a"/>
+      <rect x="180" y="40" width="10" height="20" fill="#1a1a1a"/>
+      <rect x="200" y="38" width="10" height="22" fill="#1a1a1a"/>
+      <path d="M 80,30 Q 107,20 145,38" fill="none" stroke="#c4453d" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/>
+    </g>
+
+    <text x="335" y="100" text-anchor="middle" font-size="9" fill="#555" font-style="italic">Gray = masked by the strong signal, inaudible &#8594; not sent</text>
+
+    <g transform="translate(580, 0)">
+      <text x="0" y="20" font-size="13" font-weight="600" fill="#c4453d">&#8594; 128 kbps</text>
+      <text x="0" y="36" font-size="9" fill="#888">CD is 1411 kbps</text>
+      <text x="0" y="60" font-size="11" fill="#1a1a1a">Throw away what the ear can&#8217;t hear</text>
+      <text x="0" y="80" font-size="10" fill="#555" font-style="italic">A makeup artist paints only what shows</text>
+    </g>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="450" y="565" text-anchor="middle" font-size="11" fill="#444" font-style="italic">Three approaches · one root · all branches after Atal &amp; Schroeder&#8217;s 1971 LPC paper</text>
+</svg>

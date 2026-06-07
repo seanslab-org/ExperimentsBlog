@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+ <rect width="900" height="640" fill="#ffffff"/>
+ <!-- Title -->
+ <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#1a1a1a">The 2026 Map</text>
+ <text x="450" y="54" text-anchor="middle" font-size="12" fill="#555">Which codec runs behind every second of your digital audio today</text>
+
+ <!-- Group 1: Opus -->
+ <g transform="translate(0, 100)">
+ <rect x="50" y="0" width="800" height="170" fill="#fff5f4" stroke="#c4453d" stroke-width="1.5"/>
+ <text x="70" y="22" font-size="13" font-weight="700" fill="#c4453d">Opus</text>
+ <text x="70" y="38" font-size="10" fill="#888">Real-time comms + streaming tracks · the war-ender · royalty-free</text>
+ <g font-size="11" fill="#1a1a1a" transform="translate(70, 60)">
+ <text x="0" y="14">Zoom · Teams · Discord · Slack</text>
+ <text x="0" y="36">WhatsApp · Telegram · Signal voice notes</text>
+ <text x="400" y="14">YouTube audio track</text>
+ <text x="400" y="36">Twitch · YouTube Live · Google Meet</text>
+ <text x="0" y="58">Wikipedia · SoundCloud</text>
+ <text x="400" y="58">Apple FaceTime (some modes)</text>
+ </g>
+ <text x="450" y="158" text-anchor="middle" font-size="10" fill="#c4453d" font-style="italic">WebRTC mandates Opus &#8594; nearly all modern real-time communication</text>
+ </g>
+
+ <!-- Group 2: AAC -->
+ <g transform="translate(0, 290)">
+ <rect x="50" y="0" width="800" height="100" fill="#fafafa" stroke="#1a1a1a" stroke-width="1"/>
+ <text x="70" y="22" font-size="13" font-weight="700" fill="#1a1a1a">AAC</text>
+ <text x="70" y="38" font-size="10" fill="#888">Streaming / broadcast workhorse · MP3&#8217;s successor · still the bulk of the catalog</text>
+ <g font-size="11" fill="#1a1a1a" transform="translate(70, 60)">
+ <text x="0" y="0">Spotify · YouTube Music · Amazon Music</text>
+ <text x="400" y="0">Netflix audio track</text>
+ <text x="0" y="22">Apple Music standard tier</text>
+ <text x="400" y="22">Digital / satellite radio</text>
+ </g>
+ </g>
+
+ <!-- Group 3: ALAC / FLAC -->
+ <g transform="translate(0, 410)">
+ <rect x="50" y="0" width="800" height="80" fill="#fafafa" stroke="#1a1a1a" stroke-width="1"/>
+ <text x="70" y="22" font-size="13" font-weight="700" fill="#1a1a1a">ALAC · FLAC</text>
+ <text x="70" y="38" font-size="10" fill="#888">Lossless · the audiophile turf · two survivors</text>
+ <g font-size="11" fill="#1a1a1a" transform="translate(70, 60)">
+ <text x="0" y="0">Apple Music hi-res · iTunes Lossless · ALAC</text>
+ <text x="450" y="0">Tidal hi-res · Qobuz · Bandcamp · FLAC</text>
+ </g>
+ </g>
+
+ <!-- Group 4: Cellular -->
+ <g transform="translate(0, 510)">
+ <rect x="50" y="0" width="380" height="80" fill="#fafafa" stroke="#1a1a1a" stroke-width="1"/>
+ <text x="70" y="22" font-size="13" font-weight="700" fill="#1a1a1a">AMR-WB / EVS</text>
+ <text x="70" y="38" font-size="10" fill="#888">Cellular voice · CELP family</text>
+ <g font-size="11" fill="#1a1a1a" transform="translate(70, 60)">
+ <text x="0" y="0">4G/VoLTE calls · 5G calls</text>
+ </g>
+ </g>
+
+ <!-- Group 5: Dolby / DTS -->
+ <g transform="translate(0, 510)">
+ <rect x="470" y="0" width="380" height="80" fill="#fafafa" stroke="#1a1a1a" stroke-width="1"/>
+ <text x="490" y="22" font-size="13" font-weight="700" fill="#1a1a1a">Dolby · DTS</text>
+ <text x="490" y="38" font-size="10" fill="#888">Cinema / home theater · still collecting</text>
+ <g font-size="11" fill="#1a1a1a" transform="translate(490, 60)">
+ <text x="0" y="0">Theaters · Blu-ray · Atmos / DTS:X</text>
+ </g>
+ </g>
+
+ <!-- Bottom annotation -->
+ <text x="450" y="620" text-anchor="middle" font-size="11" fill="#444" font-style="italic">Real-time winner is Opus · streaming winner is AAC · cinema winner is Dolby/DTS · lossless has two survivors</text>
+</svg>

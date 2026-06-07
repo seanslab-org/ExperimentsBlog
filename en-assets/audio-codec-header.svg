@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1200" height="480" fill="#fbfbf9"/>
+
+  <!-- Tagline -->
+  <text x="600" y="55" text-anchor="middle" font-size="11" fill="#888" letter-spacing="6">SEANSLAB · INVISIBLE INFRASTRUCTURE · PART THREE</text>
+
+  <!-- Title -->
+  <text x="600" y="115" text-anchor="middle" font-size="38" font-weight="700" fill="#1a1a1a" letter-spacing="1">Audio Codecs: Fifty Years</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="155" text-anchor="middle" font-size="20" fill="#1a1a1a" font-weight="500">From the Hand-Crank Telephone to TikTok Live</text>
+
+  <!-- Tagline below -->
+  <text x="600" y="183" text-anchor="middle" font-size="13" fill="#555" font-style="italic">A handful of people who cut sound into numbers</text>
+
+  <!-- Divider -->
+  <line x1="500" y1="208" x2="700" y2="208" stroke="#c4453d" stroke-width="1.5"/>
+
+  <!-- Left side: hand-crank telephone -->
+  <g transform="translate(110, 230)">
+    <text x="70" y="0" text-anchor="middle" font-size="11" fill="#888" letter-spacing="2">1900s</text>
+
+    <!-- Bell yoke -->
+    <line x1="45" y1="18" x2="95" y2="18" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Two bells on top -->
+    <circle cx="45" cy="25" r="11" fill="#fbfbf9" stroke="#1a1a1a" stroke-width="1.8"/>
+    <circle cx="95" cy="25" r="11" fill="#fbfbf9" stroke="#1a1a1a" stroke-width="1.8"/>
+    <line x1="45" y1="36" x2="45" y2="40" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="95" y1="36" x2="95" y2="40" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Cabinet -->
+    <rect x="25" y="42" width="90" height="135" fill="#fbfbf9" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- Mouthpiece horn -->
+    <path d="M 53,82 L 70,72 L 70,108 L 53,98 Z" fill="#1a1a1a"/>
+    <circle cx="65" cy="90" r="3" fill="#fbfbf9"/>
+
+    <!-- Faceplate label -->
+    <text x="70" y="135" text-anchor="middle" font-size="7" fill="#888" letter-spacing="3">BELL</text>
+    <line x1="40" y1="148" x2="100" y2="148" stroke="#888" stroke-width="0.5"/>
+
+    <!-- Earpiece -->
+    <path d="M 25,118 Q 12,128 14,150" fill="none" stroke="#1a1a1a" stroke-width="1.2"/>
+    <rect x="8" y="148" width="13" height="24" rx="4" fill="#1a1a1a"/>
+    <circle cx="14.5" cy="156" r="1.5" fill="#fbfbf9"/>
+
+    <!-- Crank -->
+    <circle cx="115" cy="128" r="3.5" fill="#1a1a1a"/>
+    <line x1="115" y1="128" x2="138" y2="128" stroke="#1a1a1a" stroke-width="2.5"/>
+    <line x1="138" y1="128" x2="138" y2="145" stroke="#1a1a1a" stroke-width="2.5"/>
+    <circle cx="138" cy="145" r="4.5" fill="#1a1a1a"/>
+
+    <text x="70" y="200" text-anchor="middle" font-size="11" fill="#555">Hand-crank telephone</text>
+  </g>
+
+  <!-- Sound wave in -->
+  <path d="M 290,310 Q 320,290 350,310 T 410,310 T 470,310" fill="none" stroke="#c4453d" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="475,310 468,306 468,314" fill="#c4453d" opacity="0.7"/>
+
+  <!-- Center: codec black box -->
+  <g transform="translate(510, 270)">
+    <rect x="0" y="0" width="180" height="80" fill="#1a1a1a" stroke="#1a1a1a"/>
+    <text x="90" y="22" text-anchor="middle" font-size="11" fill="#c4453d" letter-spacing="3">CODEC</text>
+    <text x="90" y="42" text-anchor="middle" font-size="11" fill="#fff" font-family="ui-monospace, Menlo, monospace">0110100 1010110</text>
+    <text x="90" y="58" text-anchor="middle" font-size="11" fill="#fff" font-family="ui-monospace, Menlo, monospace">0011001 1101010</text>
+    <text x="90" y="73" text-anchor="middle" font-size="9" fill="#888" letter-spacing="1">cutting sound into numbers</text>
+  </g>
+
+  <!-- Sound wave out -->
+  <path d="M 705,310 Q 735,290 765,310 T 825,310 T 885,310" fill="none" stroke="#c4453d" stroke-width="1.5" opacity="0.7"/>
+  <polygon points="890,310 883,306 883,314" fill="#c4453d" opacity="0.7"/>
+
+  <!-- Right side: TikTok Live -->
+  <g transform="translate(940, 250)">
+    <text x="60" y="0" text-anchor="middle" font-size="11" fill="#888" letter-spacing="2">2025</text>
+    <rect x="20" y="20" width="80" height="140" rx="9" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="48" y1="28" x2="72" y2="28" stroke="#1a1a1a" stroke-width="1"/>
+    <circle cx="38" cy="44" r="3" fill="#c4453d"/>
+    <text x="58" y="48" font-size="9" fill="#c4453d" font-weight="700">LIVE</text>
+    <circle cx="50" cy="80" r="10" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <circle cx="50" cy="76" r="2.5" fill="#1a1a1a"/>
+    <path d="M 45,82 Q 50,86 55,82" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <line x1="30" y1="105" x2="90" y2="105" stroke="#888" stroke-width="0.5"/>
+    <line x1="30" y1="115" x2="80" y2="115" stroke="#888" stroke-width="0.5"/>
+    <line x1="30" y1="125" x2="85" y2="125" stroke="#888" stroke-width="0.5"/>
+    <line x1="30" y1="135" x2="75" y2="135" stroke="#888" stroke-width="0.5"/>
+    <text x="60" y="152" text-anchor="middle" font-size="8" fill="#c4453d">&#9829; &#9829; &#9829;</text>
+    <text x="60" y="180" text-anchor="middle" font-size="11" fill="#555">TikTok Live</text>
+  </g>
+
+  <!-- Bottom byline -->
+  <text x="600" y="453" text-anchor="middle" font-size="10" fill="#aaa">Sean · seanslab.org · More than a century, strung together by one family of codecs</text>
+</svg>

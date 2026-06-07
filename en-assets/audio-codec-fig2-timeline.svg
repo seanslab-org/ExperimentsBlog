@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
+  <rect width="1100" height="640" fill="#ffffff"/>
+  <!-- Title -->
+  <text x="550" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#1a1a1a">Fifty Years of Audio Codecs</text>
+  <text x="550" y="54" text-anchor="middle" font-size="12" fill="#555">From Atal &amp; Schroeder&#8217;s LPC paper to Opus ending the war</text>
+
+  <!-- Horizontal timeline -->
+  <line x1="80" y1="560" x2="1050" y2="560" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- Year ticks -->
+  <g font-size="10" fill="#666">
+    <line x1="100" y1="555" x2="100" y2="565" stroke="#888" stroke-width="1"/>
+    <text x="100" y="582" text-anchor="middle">1971</text>
+    <line x1="200" y1="555" x2="200" y2="565" stroke="#888" stroke-width="1"/>
+    <text x="200" y="582" text-anchor="middle">1980</text>
+    <line x1="300" y1="555" x2="300" y2="565" stroke="#888" stroke-width="1"/>
+    <text x="300" y="582" text-anchor="middle">1990</text>
+    <line x1="500" y1="555" x2="500" y2="565" stroke="#888" stroke-width="1"/>
+    <text x="500" y="582" text-anchor="middle">2000</text>
+    <line x1="700" y1="555" x2="700" y2="565" stroke="#888" stroke-width="1"/>
+    <text x="700" y="582" text-anchor="middle">2010</text>
+    <line x1="900" y1="555" x2="900" y2="565" stroke="#888" stroke-width="1"/>
+    <text x="900" y="582" text-anchor="middle">2020</text>
+    <line x1="1020" y1="555" x2="1020" y2="565" stroke="#888" stroke-width="1"/>
+    <text x="1020" y="582" text-anchor="middle">2026</text>
+  </g>
+
+  <!-- Track labels -->
+  <text x="68" y="105" text-anchor="end" font-size="11" font-weight="600" fill="#1a1a1a">Voice</text>
+  <text x="68" y="118" text-anchor="end" font-size="9" fill="#888">CELP family</text>
+  <text x="68" y="225" text-anchor="end" font-size="11" font-weight="600" fill="#1a1a1a">Music</text>
+  <text x="68" y="238" text-anchor="end" font-size="9" fill="#888">lossy / psychoacoustic</text>
+  <text x="68" y="345" text-anchor="end" font-size="11" font-weight="600" fill="#1a1a1a">Cinema</text>
+  <text x="68" y="358" text-anchor="end" font-size="9" fill="#888">surround</text>
+  <text x="68" y="465" text-anchor="end" font-size="11" font-weight="600" fill="#1a1a1a">Lossless</text>
+  <text x="68" y="478" text-anchor="end" font-size="9" fill="#888">FLAC / ALAC</text>
+
+  <!-- Track 1: Voice -->
+  <line x1="80" y1="120" x2="1050" y2="120" stroke="#ddd" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <circle cx="100" cy="120" r="5" fill="#1a1a1a"/>
+  <text x="100" y="100" text-anchor="middle" font-size="10" fill="#1a1a1a" font-weight="600">LPC</text>
+  <text x="100" y="142" text-anchor="middle" font-size="8" fill="#666">Atal &amp; Schroeder</text>
+  <circle cx="110" cy="120" r="5" fill="#888"/>
+  <text x="118" y="158" text-anchor="middle" font-size="8" fill="#666">G.711</text>
+  <circle cx="245" cy="120" r="5" fill="#1a1a1a"/>
+  <text x="245" y="100" text-anchor="middle" font-size="10" fill="#1a1a1a" font-weight="600">CELP</text>
+  <circle cx="265" cy="120" r="5" fill="#888"/>
+  <text x="265" y="142" text-anchor="middle" font-size="8" fill="#666">GSM</text>
+  <circle cx="370" cy="120" r="5" fill="#888"/>
+  <text x="370" y="100" text-anchor="middle" font-size="9" fill="#666">G.729</text>
+  <circle cx="685" cy="120" r="5" fill="#c4453d"/>
+  <text x="685" y="100" text-anchor="middle" font-size="10" fill="#c4453d" font-weight="600">SILK</text>
+  <text x="685" y="142" text-anchor="middle" font-size="8" fill="#666">Skype · K. Vos</text>
+
+  <!-- Track 2: Music -->
+  <line x1="80" y1="240" x2="1050" y2="240" stroke="#ddd" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <circle cx="325" cy="240" r="6" fill="#c4453d"/>
+  <text x="325" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#c4453d">MP3</text>
+  <text x="325" y="262" text-anchor="middle" font-size="8" fill="#666">Brandenburg</text>
+  <circle cx="335" cy="240" r="4" fill="#888"/>
+  <text x="345" y="280" text-anchor="middle" font-size="8" fill="#666">l3enc</text>
+  <circle cx="380" cy="240" r="5" fill="#1a1a1a"/>
+  <text x="380" y="220" text-anchor="middle" font-size="9" font-weight="600" fill="#1a1a1a">Winamp</text>
+  <text x="380" y="298" text-anchor="middle" font-size="8" fill="#666">Frankel</text>
+  <circle cx="395" cy="240" r="5" fill="#c4453d"/>
+  <text x="408" y="262" text-anchor="middle" font-size="9" fill="#c4453d" font-weight="600">AAC</text>
+  <circle cx="430" cy="240" r="4" fill="#888"/>
+  <text x="430" y="278" text-anchor="middle" font-size="8" fill="#666">LAME</text>
+  <line x1="475" y1="200" x2="475" y2="240" stroke="#c4453d" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="475" y="195" text-anchor="middle" font-size="10" font-weight="700" fill="#c4453d">Napster</text>
+  <circle cx="525" cy="240" r="5" fill="#1a1a1a"/>
+  <text x="525" y="220" text-anchor="middle" font-size="9" fill="#1a1a1a">Vorbis</text>
+  <text x="525" y="262" text-anchor="middle" font-size="8" fill="#666">Xiph · Monty</text>
+  <line x1="555" y1="200" x2="555" y2="240" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="555" y="195" text-anchor="middle" font-size="10" font-weight="700" fill="#1a1a1a">iTunes</text>
+  <circle cx="700" cy="240" r="5" fill="#c4453d"/>
+  <text x="700" y="220" text-anchor="middle" font-size="9" fill="#c4453d">CELT</text>
+  <text x="700" y="262" text-anchor="middle" font-size="8" fill="#666">Xiph · J-M Valin</text>
+  <circle cx="745" cy="240" r="8" fill="#c4453d"/>
+  <text x="745" y="216" text-anchor="middle" font-size="13" font-weight="700" fill="#c4453d">OPUS</text>
+  <text x="745" y="284" text-anchor="middle" font-size="9" fill="#c4453d" font-weight="600">RFC 6716 · war ends</text>
+  <line x1="820" y1="200" x2="820" y2="240" stroke="#888" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="820" y="195" text-anchor="middle" font-size="9" fill="#888">MP3 patents expire</text>
+
+  <!-- Track 3: Cinema -->
+  <line x1="80" y1="360" x2="1050" y2="360" stroke="#ddd" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <circle cx="305" cy="360" r="5" fill="#1a1a1a"/>
+  <text x="305" y="340" text-anchor="middle" font-size="10" font-weight="600" fill="#1a1a1a">AC-3</text>
+  <text x="305" y="382" text-anchor="middle" font-size="8" fill="#666">Dolby</text>
+  <circle cx="325" cy="360" r="5" fill="#1a1a1a"/>
+  <text x="325" y="398" text-anchor="middle" font-size="10" font-weight="600" fill="#1a1a1a">DTS</text>
+  <text x="325" y="416" text-anchor="middle" font-size="8" fill="#666">T. Beard</text>
+  <circle cx="615" cy="360" r="4" fill="#888"/>
+  <text x="615" y="340" text-anchor="middle" font-size="8" fill="#666">TrueHD / HD-MA</text>
+  <circle cx="745" cy="360" r="4" fill="#888"/>
+  <text x="745" y="340" text-anchor="middle" font-size="9" fill="#666">Atmos / DTS:X</text>
+
+  <!-- Track 4: Lossless -->
+  <line x1="80" y1="480" x2="1050" y2="480" stroke="#ddd" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <circle cx="510" cy="480" r="5" fill="#1a1a1a"/>
+  <text x="510" y="460" text-anchor="middle" font-size="10" font-weight="600" fill="#1a1a1a">FLAC</text>
+  <text x="510" y="502" text-anchor="middle" font-size="8" fill="#666">Coalson</text>
+  <circle cx="565" cy="480" r="5" fill="#1a1a1a"/>
+  <text x="575" y="502" text-anchor="middle" font-size="9" fill="#1a1a1a">ALAC · Apple</text>
+
+  <!-- Bottom annotation -->
+  <text x="550" y="618" text-anchor="middle" font-size="11" fill="#444" font-style="italic">Over fifty years the winner was never the strongest tech — it was the cleanest license, the largest install base</text>
+</svg>
