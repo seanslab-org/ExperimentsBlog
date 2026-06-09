@@ -1,0 +1,43 @@
+<svg viewBox="0 0 1120 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A Docknote note: a short summary on the left, a speaker-tagged transcript on the right.">
+  <rect width="1120" height="440" fill="#F7F5EF"/>
+  <rect x="40" y="28" width="1040" height="384" rx="16" fill="#FFFFFF" stroke="#e7e3d8"/>
+  <circle cx="68" cy="56" r="5" fill="#e3ded2"/><circle cx="86" cy="56" r="5" fill="#e3ded2"/><circle cx="104" cy="56" r="5" fill="#e3ded2"/>
+  <text x="560" y="61" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="13.5" font-weight="600" fill="#1F1F1E">Q2 Planning · 41 min</text>
+  <line x1="40" y1="80" x2="1080" y2="80" stroke="#e7e3d8"/>
+
+  <g transform="translate(72,104)">
+    <text x="0" y="0" font-family="-apple-system,system-ui,sans-serif" font-size="12" font-weight="600" letter-spacing="1.5" fill="#0097a7">SUMMARY</text>
+    <text x="0" y="28" font-family="-apple-system,system-ui,sans-serif" font-size="14" fill="#3f3e39">Ship the beta to a small group first, and hold the</text>
+    <text x="0" y="48" font-family="-apple-system,system-ui,sans-serif" font-size="14" fill="#3f3e39">broader launch until quality is measured.</text>
+
+    <text x="0" y="92" font-family="-apple-system,system-ui,sans-serif" font-size="12" font-weight="600" letter-spacing="1.5" fill="#5B9279">DECISIONS</text>
+    <g font-family="-apple-system,system-ui,sans-serif" font-size="14" fill="#1F1F1E">
+      <rect x="0" y="106" width="7" height="7" rx="2" fill="#1bbfcb"/><text x="20" y="114">Ship to the first 20 beta users this week.</text>
+      <rect x="0" y="134" width="7" height="7" rx="2" fill="#1bbfcb"/><text x="20" y="142">Keep launch gated on quality data.</text>
+    </g>
+
+    <text x="0" y="184" font-family="-apple-system,system-ui,sans-serif" font-size="12" font-weight="600" letter-spacing="1.5" fill="#6B8AB8">NEXT STEPS</text>
+    <g font-family="-apple-system,system-ui,sans-serif" font-size="14" fill="#1F1F1E">
+      <rect x="0" y="198" width="13" height="13" rx="3" fill="none" stroke="#b9b5a8" stroke-width="1.6"/><text x="26" y="209">Sean — gather feedback from the cohort.</text>
+      <rect x="0" y="226" width="13" height="13" rx="3" fill="none" stroke="#b9b5a8" stroke-width="1.6"/><text x="26" y="237">Team — review accuracy by Friday.</text>
+    </g>
+  </g>
+
+  <line x1="556" y1="96" x2="556" y2="380" stroke="#efece3"/>
+
+  <g transform="translate(592,104)">
+    <text x="0" y="0" font-family="-apple-system,system-ui,sans-serif" font-size="12" font-weight="600" letter-spacing="1.5" fill="#8a887f">TRANSCRIPT</text>
+    <circle cx="9" cy="28" r="9" fill="#1bbfcb" opacity=".9"/><text x="9" y="32" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="9" font-weight="600" fill="#fff">A</text>
+    <text x="30" y="25" font-family="-apple-system,system-ui,sans-serif" font-size="12.5" font-weight="600" fill="#1F1F1E">Speaker A<tspan fill="#a9a799" font-weight="400">  ·  00:03</tspan></text>
+    <text x="30" y="46" font-family="-apple-system,system-ui,sans-serif" font-size="13.5" fill="#4a4943">Let's start narrow and learn from real use.</text>
+    <circle cx="9" cy="86" r="9" fill="#5B9279"/><text x="9" y="90" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="9" font-weight="600" fill="#fff">B</text>
+    <text x="30" y="83" font-family="-apple-system,system-ui,sans-serif" font-size="12.5" font-weight="600" fill="#1F1F1E">Speaker B<tspan fill="#a9a799" font-weight="400">  ·  00:21</tspan></text>
+    <text x="30" y="104" font-family="-apple-system,system-ui,sans-serif" font-size="13.5" fill="#4a4943">Agreed. I'd rather hold than over-promise.</text>
+    <circle cx="9" cy="144" r="9" fill="#1bbfcb" opacity=".9"/><text x="9" y="148" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="9" font-weight="600" fill="#fff">A</text>
+    <text x="30" y="141" font-family="-apple-system,system-ui,sans-serif" font-size="12.5" font-weight="600" fill="#1F1F1E">Speaker A<tspan fill="#a9a799" font-weight="400">  ·  00:39</tspan></text>
+    <text x="30" y="162" font-family="-apple-system,system-ui,sans-serif" font-size="13.5" fill="#4a4943">Then twenty users this week, and we measure.</text>
+    <circle cx="9" cy="202" r="9" fill="#5B9279" opacity=".5"/><text x="9" y="206" text-anchor="middle" font-family="-apple-system,system-ui,sans-serif" font-size="9" font-weight="600" fill="#fff">B</text>
+    <text x="30" y="199" font-family="-apple-system,system-ui,sans-serif" font-size="12.5" font-weight="600" fill="#bdbbb0">Speaker B<tspan font-weight="400">  ·  00:58</tspan></text>
+    <text x="30" y="220" font-family="-apple-system,system-ui,sans-serif" font-size="13.5" fill="#c4c2b6">I'll set up the feedback channel today…</text>
+  </g>
+</svg>
