@@ -1,0 +1,25 @@
+<svg width="1600" height="600" viewBox="0 0 1600 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Docknote — soft teal sound-wave banner.">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="52%">
+      <stop offset="0" stop-color="#1bbfcb" stop-opacity="0.16"/>
+      <stop offset="0.55" stop-color="#1bbfcb" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#1bbfcb" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0097a7" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#0097a7" stop-opacity="1"/>
+      <stop offset="0.82" stop-color="#1bbfcb" stop-opacity="1"/>
+      <stop offset="1" stop-color="#1bbfcb" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="#F7F5EF"/>
+  <rect width="1600" height="600" fill="url(#glow)"/>
+
+  <!-- layered sound ripples, centered vertically, fading at the edges -->
+  <g fill="none" stroke="url(#stroke)" stroke-linecap="round">
+    <path d="M0,300 C 200,300 280,232 400,232 C 520,232 600,368 720,368 C 840,368 920,232 1040,232 C 1160,232 1240,368 1360,368 C 1480,368 1560,300 1600,300" stroke-width="3" opacity="0.9"/>
+    <path d="M0,300 C 200,300 280,256 400,256 C 520,256 600,344 720,344 C 840,344 920,256 1040,256 C 1160,256 1240,344 1360,344 C 1480,344 1560,300 1600,300" stroke-width="2.4" opacity="0.5"/>
+    <path d="M0,300 C 200,300 280,282 400,282 C 520,282 600,318 720,318 C 840,318 920,282 1040,282 C 1160,282 1240,318 1360,318 C 1480,318 1560,300 1600,300" stroke-width="2" opacity="0.28"/>
+  </g>
+</svg>
