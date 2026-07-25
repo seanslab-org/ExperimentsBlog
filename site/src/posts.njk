@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+title: Writing
+description: All essays and notes from seanslab.
+permalink: /posts/index.html
+---
+<header class="page-header shell">
+  <p class="eyebrow">The complete notebook</p>
+  <h1>Writing</h1>
+  <p>Deep dives, field notes, and experiments—ordered by the date they escaped the lab.</p>
+</header>
+<section class="archive shell">
+  {% for post in collections.posts %}
+    <article>
+      <div class="archive-meta">
+        <time datetime="{{ post.date | isoDate }}">{{ post.date | dateDisplay }}</time>
+        <span>{{ post.data.series or "Field notes" }}</span>
+      </div>
+      <div>
+        <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+        <p>{{ post.data.description }}</p>
+      </div>
+      <a class="archive-arrow" href="{{ post.url }}" aria-label="Read {{ post.data.title }}">→</a>
+    </article>
+  {% endfor %}
+</section>

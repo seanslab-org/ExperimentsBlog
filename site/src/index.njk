@@ -1,0 +1,76 @@
+---
+layout: layouts/base.njk
+title: Experiments from seanslab
+description: Deep-dive essays about invisible infrastructure, engineering, and the systems beneath everyday technology.
+permalink: /
+---
+<section class="hero shell">
+  <div class="hero-copy">
+    <p class="eyebrow">Independent engineering notes · Singapore</p>
+    <h1>The infrastructure is invisible.<br><em>The consequences aren't.</em></h1>
+    <p class="hero-intro">Long-form stories about codecs, protocols, hardware, AI, and the people who made modern technology feel ordinary.</p>
+    <a class="text-link" href="/posts/">Read the writing <span>→</span></a>
+  </div>
+  <div class="hero-mark" aria-hidden="true">
+    <span>EXPERIMENT<br>NO. 001</span>
+    <img src="/assets/mark-starchart.svg" alt="">
+  </div>
+</section>
+
+<section class="featured shell" aria-labelledby="featured-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Selected writing</p>
+      <h2 id="featured-title">Start here</h2>
+    </div>
+    <a href="/posts/">View all {{ collections.posts.length }} essays</a>
+  </div>
+  <div class="story-grid">
+    {% for post in collections.featuredPosts %}
+      <article class="story-card{% if loop.index == 1 %} story-card--lead{% endif %}">
+        <a href="{{ post.url }}" aria-label="Read {{ post.data.title }}">
+          <div class="story-index">
+            <span>0{{ loop.index }}</span>
+            <span>{{ post.data.series or "Field notes" }}</span>
+          </div>
+          <h3>{{ post.data.title }}</h3>
+          <p>{{ post.data.description }}</p>
+          <div class="story-footer">
+            <time datetime="{{ post.date | isoDate }}">{{ post.date | dateDisplay }}</time>
+            <span>{{ post.content | readingTime }} min →</span>
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="manifesto shell">
+  <p class="manifesto-number">39 <span>bits / second</span></p>
+  <div>
+    <p class="eyebrow">A working belief</p>
+    <blockquote>Technology becomes interesting when you follow a constraint all the way down—and find a person at the bottom.</blockquote>
+  </div>
+</section>
+
+<section class="latest shell" aria-labelledby="latest-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">From the notebook</p>
+      <h2 id="latest-title">Latest essays</h2>
+    </div>
+  </div>
+  <ol class="story-list">
+    {% for post in collections.posts %}
+      {% if loop.index <= 5 %}
+      <li>
+        <a href="{{ post.url }}">
+          <time datetime="{{ post.date | isoDate }}">{{ post.date | dateDisplay }}</time>
+          <span>{{ post.data.title }}</span>
+          <b aria-hidden="true">↗</b>
+        </a>
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</section>

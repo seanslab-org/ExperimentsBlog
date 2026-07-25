@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+pageType: article
+---
+<article class="post">
+  <header class="post-header shell reading-shell">
+    <a class="back-link" href="/posts/">← All writing</a>
+    <p class="eyebrow">{{ series or "Field notes" }}</p>
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="post-dek">{{ description }}</p>{% endif %}
+    <div class="post-meta">
+      <span>By {{ site.author }}</span>
+      <time datetime="{{ date | isoDate }}">{{ date | dateDisplay }}</time>
+      <span>{{ content | readingTime }} min read</span>
+      {% if languageLabel %}<span>{{ languageLabel }}</span>{% endif %}
+    </div>
+    {% if cover %}
+      <figure class="post-cover">
+        <img src="{{ cover }}" alt="" width="1600" height="900">
+      </figure>
+    {% else %}
+      <div class="post-signal" aria-hidden="true">
+        <span>{{ signal or "01" }}</span>
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+    {% endif %}
+  </header>
+  <div class="prose shell reading-shell">
+    {{ content | safe }}
+  </div>
+  <footer class="post-end shell reading-shell">
+    <img src="/assets/mark.svg" width="48" height="48" alt="">
+    <p><strong>Thanks for reading.</strong><br>More notes from the lab arrive when they are ready.</p>
+    <a href="/posts/">Continue reading →</a>
+  </footer>
+</article>

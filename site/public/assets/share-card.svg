@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">seanslab</title>
+  <desc id="desc">Experiments in invisible infrastructure</desc>
+  <rect width="1200" height="630" fill="#ede8de"/>
+  <path d="M72 84h1056M72 546h1056" stroke="#cfc8b8"/>
+  <circle cx="86" cy="145" r="7" fill="#f28a1a"/>
+  <text x="106" y="157" fill="#0f0f0f" font-family="Arial, sans-serif" font-size="38" font-weight="700">seanslab.org</text>
+  <text x="72" y="330" fill="#0f0f0f" font-family="Arial, sans-serif" font-size="82" font-weight="800">Experiments in</text>
+  <text x="72" y="420" fill="#f28a1a" font-family="Georgia, serif" font-size="82" font-style="italic">invisible infrastructure.</text>
+  <text x="72" y="587" fill="#6a6458" font-family="monospace" font-size="20" letter-spacing="3">SEAN SONG · SINGAPORE</text>
+</svg>
