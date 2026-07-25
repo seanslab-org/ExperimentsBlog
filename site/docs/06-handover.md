@@ -12,9 +12,9 @@ git push origin main
 
 Review the staged file list before committing because the repository already contains unrelated uncommitted work.
 
-## 2. Create the Pages project
+## 2. Pages project
 
-In Cloudflare: **Workers & Pages → Create → Pages → Connect to Git**.
+The Git-connected Pages project is `seanslab-blog`, with preview URL `https://seanslab-blog.pages.dev`.
 
 - Repository: `seanslab-org/ExperimentsBlog`
 - Production branch: `main`
@@ -41,7 +41,10 @@ On the generated `*.pages.dev` URL, check:
 
 First export or screenshot the current Cloudflare DNS records. The apex-domain Super target does not need to change.
 
-In the Pages project, open **Custom domains** and add `blog.seanslab.org`.
+`blog.seanslab.org` is already attached under **Custom domains**. In the Cloudflare account that owns the `seanslab.org` zone, add a proxied CNAME record:
+
+- Name: `blog`
+- Target: `seanslab-blog.pages.dev`
 
 The domain already uses Cloudflare nameservers, so Pages can create the subdomain record automatically. If Cloudflare reports a conflicting `blog` record, inspect and preserve it before making any change. Do not create a Pages CNAME manually before associating the custom domain in the Pages dashboard; Cloudflare documents that this can produce a 522. See [custom domains](https://developers.cloudflare.com/pages/configuration/custom-domains/).
 
