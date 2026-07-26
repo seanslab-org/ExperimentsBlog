@@ -3,7 +3,8 @@ export default {
   domain: "blog.seanslab.org",
   url: "https://blog.seanslab.org",
   author: "Sean Song",
-  email: "sean.sp.song@gmail.com",
+  email: "sean@seanslab.org",
+  twitter: "https://x.com/seansong",
   year: 2026,
   description:
     "Deep-dive essays about invisible infrastructure, engineering, and the systems beneath everyday technology.",
