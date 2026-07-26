@@ -31,17 +31,6 @@ const posts = [
     featured: true,
   },
   {
-    path: "/posts/docknote-your-private-meeting-intelligence",
-    output: "docknote-your-private-meeting-intelligence.md",
-    title: "Docknote: Your Private Meeting Intelligence",
-    description: "A field note on building meeting intelligence that keeps raw audio and private context under the user's control.",
-    date: "2026-06-09",
-    series: "Build notes",
-    signal: "06",
-    cover: "/assets/covers/docknote-cover.png",
-    featured: false,
-  },
-  {
     path: "/posts/i-vibe-coded-a-vibe-code-microphone-for-vibe-coding-on-spotify-car-thing",
     output: "i-vibe-coded-a-vibe-code-microphone-for-vibe-coding-on-spotify-car-thing.md",
     title: "I Vibe-Coded a Microphone for Vibe Coding on Spotify Car Thing",
