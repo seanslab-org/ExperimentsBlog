@@ -5,13 +5,62 @@
       <stop offset="60%" stop-color="#fff6dc" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="#fff6dc" stop-opacity="0"/>
     </radialGradient>
+    <mask id="seanslab-eye">
+      <rect x="0" y="0" width="100" height="100" fill="white"/>
+      <circle cx="28" cy="30" r="1.8" fill="black"/>
+    </mask>
+    <style>
+      .ambient-stars { animation: sky-breathe 10s ease-in-out infinite; }
+      .icon-reveal {
+        opacity: .28;
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: icon-reveal 10s cubic-bezier(.4,0,.2,1) infinite;
+      }
+      .constellation-lines line {
+        stroke-dasharray: 80;
+        stroke-dashoffset: 80;
+        animation: draw-asterism 10s ease-in-out infinite;
+      }
+      .constellation-lines line:nth-child(2) { animation-delay: .12s; }
+      .constellation-lines line:nth-child(3) { animation-delay: .24s; }
+      .constellation-lines line:nth-child(4) { animation-delay: .36s; }
+      .constellation-lines line:nth-child(5) { animation-delay: .48s; }
+      .constellation-lines line:nth-child(6) { animation-delay: .6s; }
+      .constellation-lines line:nth-child(7) { animation-delay: .72s; }
+      .constellation-lines line:nth-child(8) { animation-delay: .84s; }
+      .star-glows { animation: glow-breathe 3.6s ease-in-out infinite; }
+      .star-cores circle { transform-box: fill-box; transform-origin: center; animation: star-pulse 3.6s ease-in-out infinite; }
+      .star-cores circle:nth-child(2n) { animation-delay: -.9s; }
+      .star-cores circle:nth-child(3n) { animation-delay: -1.8s; }
+
+      @keyframes draw-asterism {
+        0%, 7% { stroke-dashoffset: 80; opacity: .1; }
+        30%, 82% { stroke-dashoffset: 0; opacity: .72; }
+        100% { stroke-dashoffset: -80; opacity: .12; }
+      }
+      @keyframes icon-reveal {
+        0%, 35%, 100% { opacity: .16; transform: scale(.985); }
+        53%, 72% { opacity: .92; transform: scale(1); }
+        86% { opacity: .28; transform: scale(1.012); }
+      }
+      @keyframes sky-breathe { 0%, 100% { opacity: .62; } 50% { opacity: 1; } }
+      @keyframes glow-breathe { 0%, 100% { opacity: .48; } 50% { opacity: 1; } }
+      @keyframes star-pulse { 0%, 100% { transform: scale(.82); opacity: .7; } 50% { transform: scale(1.22); opacity: 1; } }
+
+      @media (prefers-reduced-motion: reduce) {
+        .ambient-stars, .icon-reveal, .constellation-lines line, .star-glows, .star-cores circle { animation: none; }
+        .icon-reveal { opacity: .34; transform: none; }
+        .constellation-lines line { stroke-dashoffset: 0; opacity: .72; }
+      }
+    </style>
   </defs>
 
   <!-- Night sky -->
   <rect x="-10" y="-22" width="220" height="150" fill="#0b1128" />
 
   <!-- Ambient distant stars -->
-  <g fill="#c8d1e8">
+  <g class="ambient-stars" fill="#c8d1e8">
     <circle cx="3"    cy="8"   r="0.22" opacity="0.55"/>
     <circle cx="18"   cy="4"   r="0.32" opacity="0.8"/>
     <circle cx="38"   cy="2"   r="0.18" opacity="0.45"/>
@@ -44,8 +93,19 @@
     <circle cx="200"  cy="90"  r="0.22" opacity="0.55"/>
   </g>
 
+  <!-- The solid Seanslab mark shares the constellation's exact geometry. -->
+  <g class="icon-reveal" fill="#f28a1a" mask="url(#seanslab-eye)">
+    <circle cx="54" cy="54" r="26"/>
+    <rect x="40" y="78" width="10" height="16" rx="3"/>
+    <rect x="58" y="78" width="10" height="16" rx="3"/>
+    <circle cx="32" cy="30" r="12"/>
+    <circle cx="24" cy="20" r="4"/>
+    <circle cx="28" cy="13" r="3"/>
+    <circle cx="34" cy="15" r="2"/>
+  </g>
+
   <!-- Asterism connecting lines -->
-  <g stroke="#dfe4f4" stroke-width="0.22" opacity="0.5" fill="none" stroke-linecap="round">
+  <g class="constellation-lines" stroke="#dfe4f4" stroke-width="0.22" opacity="0.5" fill="none" stroke-linecap="round">
     <line x1="34" y1="15" x2="28" y2="13"/>
     <line x1="28" y1="13" x2="24" y2="20"/>
     <line x1="24" y1="20" x2="32" y2="30"/>
@@ -56,7 +116,7 @@
   </g>
 
   <!-- Star glows -->
-  <g>
+  <g class="star-glows">
     <circle cx="54" cy="54" r="6.5" fill="url(#glow)"/>
     <circle cx="32" cy="30" r="4.2" fill="url(#glow)"/>
     <circle cx="45" cy="86" r="3.4" fill="url(#glow)"/>
@@ -68,7 +128,7 @@
   </g>
 
   <!-- Stars -->
-  <g fill="#fff6dc">
+  <g class="star-cores" fill="#fff6dc">
     <circle cx="54" cy="54" r="1.4"/>
     <circle cx="32" cy="30" r="0.95"/>
     <circle cx="45" cy="86" r="0.75"/>
@@ -98,7 +158,7 @@
   <!-- Title block -->
   <g font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace" fill="#f0ead2">
     <text x="-8" y="-13" font-size="4.4" letter-spacing="0.45" font-weight="500">ELEPHANTULUS</text>
-    <text x="-8" y="-7.5" font-size="2.3" letter-spacing="0.38" opacity="0.65">THE LITTLE ELEPHANT &#183; UNOFFICIAL ASTERISM &#183; 8 STARS</text>
+    <text x="-8" y="-7.5" font-size="2.3" letter-spacing="0.38" opacity="0.65">6 CIRCLE CENTERS + 2 LEG CENTERS &#8594; 8 STARS</text>
   </g>
 
   <!-- Catalog panel -->

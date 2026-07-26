@@ -10,15 +10,145 @@ permalink: /about/index.html
     <h1>Built by curiosity.<br>Kept honest by engineering.</h1>
   </header>
   <div class="about-grid">
-    <div class="about-mark">
-      <img src="/assets/mark-starchart.svg" alt="The seanslab Elephantulus star-chart mark">
-      <p>ELEPHANTULUS<br>UNOFFICIAL ASTERISM · 2026</p>
-    </div>
-    <div class="prose about-copy">
-      <p class="lead">I’m Sean Song—an engineer, product builder, and lifelong student of the systems hiding underneath everyday tools.</p>
-      <p>I started close to the metal: codecs, embedded systems, and the kind of work where a single wrong bit can ruin the whole result. Today I build products with AI and write about the strange continuity between those worlds.</p>
-      <p>seanslab is where I follow technical constraints into history, business, culture, and human behavior. The pieces are long because the interesting part is usually one layer deeper than the obvious answer.</p>
-      <p>If something here starts a useful argument, write to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
-    </div>
+    <figure class="about-mark">
+      <img src="/assets/mark-starchart.svg" alt="Animated diagram showing the Seanslab elephant icon emerging from the Elephantulus asterism">
+      <figcaption>
+        <span>ELEPHANTULUS · UNOFFICIAL ASTERISM · 2026</span>
+        <span>6 CIRCLES + 2 LEGS → 8 STARS</span>
+      </figcaption>
+    </figure>
+
+    <section class="elephantulus-story" aria-labelledby="elephantulus-title">
+      <div>
+        <p class="eyebrow">The mark in the sky</p>
+        <h2 id="elephantulus-title">Six circles. Two legs.<br>Eight stars.</h2>
+      </div>
+      <div class="elephantulus-prose">
+        <p>The seanslab elephant is built from six circles—the body, head, three-part trunk, and circular eye cutout—and two rounded rectangles for its legs. Keep only the center of each primitive and the silhouette becomes an eight-star asterism.</p>
+        <p>Connected in the same order, those points retain the curled trunk, the backward glance, the round body, and its two-footed stance. We call it <em>Elephantulus</em>: the little elephant, held still in starlight.</p>
+        <p class="elephantulus-formula"><span>6 circles</span><b>+</b><span>2 legs</span><b>→</b><span>8 centers</span><b>→</b><span>1 asterism</span></p>
+      </div>
+    </section>
+
+    <ol class="mark-mapping" aria-label="How the Seanslab mark maps to Elephantulus">
+      <li>
+        <div class="mapping-visual" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <defs>
+              <mask id="mapping-mark-eye">
+                <rect width="100" height="100" fill="white" />
+                <circle cx="28" cy="30" r="1.8" fill="black" />
+              </mask>
+            </defs>
+            <g class="mapping-mark-shape" mask="url(#mapping-mark-eye)">
+              <circle cx="54" cy="54" r="26" />
+              <rect x="40" y="78" width="10" height="16" rx="3" />
+              <rect x="58" y="78" width="10" height="16" rx="3" />
+              <circle cx="32" cy="30" r="12" />
+              <circle cx="24" cy="20" r="4" />
+              <circle cx="28" cy="13" r="3" />
+              <circle cx="34" cy="15" r="2" />
+            </g>
+          </svg>
+        </div>
+        <div class="mapping-copy">
+          <span>01 / SILHOUETTE</span>
+          <h3>Build the mark</h3>
+          <p>Five filled circles, one circular eye cutout, and two rounded legs make the elephant.</p>
+        </div>
+      </li>
+      <li>
+        <div class="mapping-visual" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <g class="mapping-construction">
+              <circle cx="54" cy="54" r="26" />
+              <rect x="40" y="78" width="10" height="16" rx="3" />
+              <rect x="58" y="78" width="10" height="16" rx="3" />
+              <circle cx="32" cy="30" r="12" />
+              <circle cx="24" cy="20" r="4" />
+              <circle cx="28" cy="13" r="3" />
+              <circle cx="34" cy="15" r="2" />
+              <circle class="mapping-eye-ring" cx="28" cy="30" r="1.8" />
+            </g>
+            <g class="mapping-centers">
+              <circle cx="54" cy="54" r="1.7" />
+              <circle cx="32" cy="30" r="1.25" />
+              <circle cx="45" cy="86" r="1" />
+              <circle cx="63" cy="86" r="1" />
+              <circle cx="24" cy="20" r="0.95" />
+              <circle cx="28" cy="13" r="0.9" />
+              <circle cx="34" cy="15" r="0.85" />
+              <circle cx="28" cy="30" r="0.8" />
+            </g>
+          </svg>
+        </div>
+        <div class="mapping-copy">
+          <span>02 / CENTERS</span>
+          <h3>Keep one point each</h3>
+          <p>Replace every primitive with its center. The geometry stays fixed while the outline falls away.</p>
+        </div>
+      </li>
+      <li>
+        <div class="mapping-visual" aria-hidden="true">
+          <svg viewBox="0 0 100 100">
+            <g class="mapping-lines">
+              <line x1="34" y1="15" x2="28" y2="13" />
+              <line x1="28" y1="13" x2="24" y2="20" />
+              <line x1="24" y1="20" x2="32" y2="30" />
+              <line x1="32" y1="30" x2="28" y2="30" />
+              <line x1="32" y1="30" x2="54" y2="54" />
+              <line x1="54" y1="54" x2="45" y2="86" />
+              <line x1="54" y1="54" x2="63" y2="86" />
+            </g>
+            <g class="mapping-centers mapping-stars">
+              <circle cx="54" cy="54" r="1.7" />
+              <circle cx="32" cy="30" r="1.25" />
+              <circle cx="45" cy="86" r="1" />
+              <circle cx="63" cy="86" r="1" />
+              <circle cx="24" cy="20" r="0.95" />
+              <circle cx="28" cy="13" r="0.9" />
+              <circle cx="34" cy="15" r="0.85" />
+              <circle cx="28" cy="30" r="0.8" />
+            </g>
+          </svg>
+        </div>
+        <div class="mapping-copy">
+          <span>03 / ASTERISM</span>
+          <h3>Connect the stars</h3>
+          <p>The curl, glance, body, and stance remain. The mark is still readable without its silhouette.</p>
+        </div>
+      </li>
+    </ol>
+
+    <section class="elephantulus-catalog" aria-labelledby="catalog-title">
+      <div class="catalog-intro">
+        <p class="eyebrow">Star catalog</p>
+        <h2 id="catalog-title">Every point has a job.</h2>
+        <p>The old chart gave each point a mock-Latin name. Together they carry just enough information for the elephant to survive the translation from logo to sky.</p>
+      </div>
+      <dl class="star-key">
+        <div><dt>α</dt><dd><strong>Elephantuli</strong><span>body</span></dd></div>
+        <div><dt>β</dt><dd><strong>Capitis</strong><span>head</span></dd></div>
+        <div><dt>γ</dt><dd><strong>Pedis</strong><span>left foot</span></dd></div>
+        <div><dt>δ</dt><dd><strong>Pedis Alter</strong><span>right foot</span></dd></div>
+        <div><dt>ε</dt><dd><strong>Nasi</strong><span>trunk, base</span></dd></div>
+        <div><dt>ζ</dt><dd><strong>Nasi Medii</strong><span>trunk, middle</span></dd></div>
+        <div><dt>η</dt><dd><strong>Nasi Apicis</strong><span>trunk, tip</span></dd></div>
+        <div><dt>θ</dt><dd><strong>Oculi</strong><span>eye</span></dd></div>
+      </dl>
+    </section>
+
+    <section class="about-copy" aria-labelledby="about-sean-title">
+      <div class="about-copy-heading">
+        <p class="eyebrow">About Sean</p>
+        <h2 id="about-sean-title">Engineer, builder,<br>student of systems.</h2>
+      </div>
+      <div class="prose about-copy-body">
+        <p class="lead">I’m Sean Song—an engineer, product builder, and lifelong student of the systems hiding underneath everyday tools.</p>
+        <p>I started close to the metal: codecs, embedded systems, and the kind of work where a single wrong bit can ruin the whole result. Today I build products with AI and write about the strange continuity between those worlds.</p>
+        <p>seanslab is where I follow technical constraints into history, business, culture, and human behavior. The pieces are long because the interesting part is usually one layer deeper than the obvious answer.</p>
+        <p>If something here starts a useful argument, write to <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+      </div>
+    </section>
   </div>
 </article>
