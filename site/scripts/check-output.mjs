@@ -41,6 +41,12 @@ for (const file of await walk(root)) {
   if (!html.includes('name="description"')) failures.push(`no description: ${file}`);
   if (!html.includes('rel="canonical"')) failures.push(`no canonical: ${file}`);
   if (/href="\/undefined|src="\/undefined/.test(html)) failures.push(`undefined URL: ${file}`);
+  if (!/href="\/styles\.css\?v=[a-f0-9]{12}"/.test(html)) {
+    failures.push(`unversioned stylesheet: ${file}`);
+  }
+  if (/(?:href|src)="\/assets\/mark(?:-starchart)?\.svg"/.test(html)) {
+    failures.push(`unversioned brand asset: ${file}`);
+  }
 
   for (const match of html.matchAll(/(?:href|src)="(\/[^"?#]*)/g)) {
     const urlPath = decodeURIComponent(match[1]);

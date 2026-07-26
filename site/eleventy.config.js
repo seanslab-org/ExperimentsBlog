@@ -1,4 +1,20 @@
 import markdownIt from "markdown-it";
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+
+const versionedAssets = [
+  "./public/styles.css",
+  "./public/assets/mark.svg",
+  "./public/assets/mark-starchart.svg",
+];
+const assetVersion = createHash("sha256")
+  .update(
+    versionedAssets
+      .map((file) => readFileSync(new URL(file, import.meta.url)))
+      .join("")
+  )
+  .digest("hex")
+  .slice(0, 12);
 
 const dateFormatter = new Intl.DateTimeFormat("en", {
   day: "2-digit",
@@ -10,6 +26,7 @@ const dateFormatter = new Intl.DateTimeFormat("en", {
 export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ public: "/" });
   eleventyConfig.addWatchTarget("./src/styles/");
+  eleventyConfig.addGlobalData("assetVersion", assetVersion);
 
   eleventyConfig.setLibrary(
     "md",
