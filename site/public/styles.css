@@ -578,13 +578,13 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 0.75fr 1.25fr;
-  gap: 9vw;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 7vw;
   padding-top: 72px;
   border-top: 1px solid var(--ink);
 }
 
-.about-mark img { width: min(100%, 360px); }
+.about-mark img { width: min(100%, 560px); }
 
 .about-mark p {
   margin-top: 28px;
@@ -668,7 +668,7 @@ nav a:hover, nav a[aria-current="page"] { color: var(--ink); }
   .back-link { margin-bottom: 50px; }
   .prose { font-size: 18px; }
   .about-grid { grid-template-columns: 1fr; }
-  .about-mark img { width: 250px; }
+  .about-mark img { width: min(100%, 420px); }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
   .footer-meta { grid-column: 1 / -1; justify-self: start; text-align: left; }
 }
