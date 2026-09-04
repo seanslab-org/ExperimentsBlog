@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c4453d"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#888"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#1a1a1a">市场版 Maxwell's demon</text>
+  <text x="400" y="54" text-anchor="middle" font-size="12" fill="#555">用能量换信息分类——把高熵产品筛出去</text>
+
+  <!-- Left chamber: low entropy / survivors -->
+  <rect x="50" y="95" width="290" height="270" fill="#fafafa" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="195" y="121" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a1a">低熵 · 存活</text>
+  <text x="195" y="139" text-anchor="middle" font-size="10" fill="#555">码本干净 · 可识别 · 可预测</text>
+
+  <text x="195" y="178" text-anchor="middle" font-size="12" fill="#1a1a1a">Windows · macOS · Linux</text>
+  <text x="195" y="205" text-anchor="middle" font-size="12" fill="#1a1a1a">iOS · Android</text>
+  <text x="195" y="232" text-anchor="middle" font-size="12" fill="#1a1a1a">Python · TS · Go · Rust</text>
+  <text x="195" y="259" text-anchor="middle" font-size="12" fill="#1a1a1a">Claude · ChatGPT</text>
+  <text x="195" y="286" text-anchor="middle" font-size="12" fill="#1a1a1a">Apple Intelligence</text>
+
+  <!-- Right chamber: high entropy / filtered out -->
+  <rect x="460" y="95" width="290" height="270" fill="#f5f5f5" stroke="#bbb" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="605" y="121" text-anchor="middle" font-size="13" font-weight="600" fill="#888">高熵 · 被筛</text>
+  <text x="605" y="139" text-anchor="middle" font-size="10" fill="#aaa">码本混乱 · 协作成本高</text>
+
+  <text x="605" y="172" text-anchor="middle" font-size="10" fill="#aaa" text-decoration="line-through">BeOS · NeXTSTEP · AmigaOS · OS/2</text>
+  <text x="605" y="194" text-anchor="middle" font-size="10" fill="#aaa" text-decoration="line-through">Symbian · BlackBerry · Palm · WinMo</text>
+  <text x="605" y="216" text-anchor="middle" font-size="10" fill="#aaa" text-decoration="line-through">Atari TOS · BBC OS · Commodore</text>
+  <text x="605" y="238" text-anchor="middle" font-size="10" fill="#aaa" text-decoration="line-through">OCaml · Haskell · Erlang · Smalltalk</text>
+  <text x="605" y="260" text-anchor="middle" font-size="10" fill="#aaa" text-decoration="line-through">FORTRAN · COBOL · Pascal · Ada</text>
+  <text x="605" y="282" text-anchor="middle" font-size="11" fill="#aaa">……</text>
+
+  <!-- Demon hexagon in middle -->
+  <polygon points="400,180 432,200 432,240 400,260 368,240 368,200" fill="#1a1a1a"/>
+  <text x="400" y="216" text-anchor="middle" font-size="12" font-weight="600" fill="#fff">市场</text>
+  <text x="400" y="232" text-anchor="middle" font-size="8" fill="#ccc" font-style="italic">demon</text>
+
+  <!-- Energy input arrow from below -->
+  <line x1="400" y1="410" x2="400" y2="270" stroke="#c4453d" stroke-width="2" marker-end="url(#arrowRed)"/>
+  <text x="400" y="432" text-anchor="middle" font-size="11" font-weight="600" fill="#c4453d">能量输入</text>
+  <text x="400" y="448" text-anchor="middle" font-size="10" fill="#c4453d">电力 · 资本 · 注意力 · 太阳能</text>
+
+  <!-- Heat output arrow upper right -->
+  <line x1="710" y1="100" x2="770" y2="65" stroke="#888" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="770" y="55" text-anchor="end" font-size="10" fill="#555">废热排出</text>
+  <text x="770" y="70" text-anchor="end" font-size="9" fill="#888">散热 · 死掉的产品</text>
+
+  <!-- Bottom italic annotation -->
+  <text x="400" y="466" text-anchor="middle" font-size="11" fill="#444" font-style="italic">系统总熵仍在涨——左仓的低熵是从右仓借的</text>
+</svg>

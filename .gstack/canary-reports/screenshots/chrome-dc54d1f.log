@@ -1,0 +1,5 @@
+Trying to load the allocator multiple times. This is *not* supported.
+225623 bytes written to file /Users/seansong/seanslab/ExperimentsBlog/.gstack/canary-reports/screenshots/about-dc54d1f.png
+[9066:2884161:0726/180926.026530:ERROR:base/process/process_mac.cc:53] task_policy_set TASK_CATEGORY_POLICY: (os/kern) invalid argument (4)
+[9066:2884161:0726/180926.026573:ERROR:base/process/process_mac.cc:98] task_policy_set TASK_SUPPRESSION_POLICY: (os/kern) invalid argument (4)
+[9066:2884036:0726/180926.116666:ERROR:chrome/browser/web_applications/externally_managed_app_manager.cc:680] https://docs.google.com/spreadsheets/installwebapp?usp=chrome_default from install source 1 failed to install with reason 21

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+ <!-- Title -->
+ <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#1a1a1a">2026 现状地图</text>
+ <text x="450" y="54" text-anchor="middle" font-size="12" fill="#555">你今天每一秒数字音频背后跑的是哪个 codec</text>
+
+ <!-- Two columns: scenario (left) → codec (right) -->
+ <!-- Group by codec winner -->
+
+ <!-- Group 1: Opus -->
+ <g transform="translate(0, 100)">
+ <rect x="50" y="0" width="800" height="170" fill="#fff5f4" stroke="#c4453d" stroke-width="1.5"/>
+ <text x="70" y="22" font-size="13" font-weight="700" fill="#c4453d">Opus</text>
+ <text x="70" y="38" font-size="10" fill="#888">实时通信 + 流媒体音轨 · 战争终结者 · 免授权</text>
+
+ <g font-size="11" fill="#1a1a1a" transform="translate(70, 60)">
+ <text x="0" y="14">Zoom · Teams · Discord · Slack</text>
+ <text x="0" y="36">WhatsApp · Telegram · Signal 语音消息</text>
+ <text x="400" y="14">YouTube 音轨</text>
+ <text x="400" y="36">Twitch · YouTube Live · Google Meet</text>
+ <text x="0" y="58">Wikipedia · SoundCloud</text>
+ <text x="400" y="58">Apple FaceTime（部分场景）</text>
+ </g>
+
+ <text x="450" y="158" text-anchor="middle" font-size="10" fill="#c4453d" font-style="italic">WebRTC 强制 Opus → 几乎所有现代实时通信</text>
+ </g>
+
+ <!-- Group 2: AAC -->
+ <g transform="translate(0, 290)">
+ <rect x="50" y="0" width="800" height="100" fill="#fafafa" stroke="#1a1a1a" stroke-width="1"/>
+ <text x="70" y="22" font-size="13" font-weight="700" fill="#1a1a1a">AAC</text>
+ <text x="70" y="38" font-size="10" fill="#888">流媒体 / 广播主力 · MP3 的下一代 · 仍占庞大曲库</text>
+
+ <g font-size="11" fill="#1a1a1a" transform="translate(70, 60)">
+ <text x="0" y="0">Spotify · YouTube Music · Amazon Music</text>
+ <text x="400" y="0">Netflix</text>
+      <text x="450" y="0">音轨</text>
+ <text x="0" y="22">Apple Music 标准版</text>
+ <text x="400" y="22">数字广播 / 卫星广播</text>
+ </g>
+ </g>
+
+ <!-- Group 3: ALAC / FLAC (lossless) -->
+ <g transform="translate(0, 410)">
+ <rect x="50" y="0" width="800" height="80" fill="#fafafa" stroke="#1a1a1a" stroke-width="1"/>
+ <text x="70" y="22" font-size="13" font-weight="700" fill="#1a1a1a">ALAC · FLAC</text>
+ <text x="70" y="38" font-size="10" fill="#888">无损 · 发烧友领地 · 两强各占一边</text>
+
+ <g font-size="11" fill="#1a1a1a" transform="translate(70, 60)">
+ <text x="0" y="0">Apple Music 高清版 · iTunes Lossless · ALAC</text>
+ <text x="500" y="0">Tidal 高清 · Qobuz · Bandcamp · FLAC</text>
+ </g>
+ </g>
+
+ <!-- Group 4: Cellular -->
+ <g transform="translate(0, 510)">
+ <rect x="50" y="0" width="380" height="80" fill="#fafafa" stroke="#1a1a1a" stroke-width="1"/>
+ <text x="70" y="22" font-size="13" font-weight="700" fill="#1a1a1a">AMR-WB / EVS</text>
+ <text x="70" y="38" font-size="10" fill="#888">蜂窝语音 · CELP 家族</text>
+ <g font-size="11" fill="#1a1a1a" transform="translate(70, 60)">
+ <text x="0" y="0">4G/VoLTE 通话 · 5G 通话</text>
+ </g>
+ </g>
+
+ <!-- Group 5: Dolby / DTS -->
+ <g transform="translate(0, 510)">
+ <rect x="470" y="0" width="380" height="80" fill="#fafafa" stroke="#1a1a1a" stroke-width="1"/>
+ <text x="490" y="22" font-size="13" font-weight="700" fill="#1a1a1a">Dolby · DTS</text>
+ <text x="490" y="38" font-size="10" fill="#888">影院 / 家庭影院 · 仍在收钱</text>
+ <g font-size="11" fill="#1a1a1a" transform="translate(490, 60)">
+ <text x="0" y="0">院线 · Blu-ray · Atmos / DTS:X</text>
+ </g>
+ </g>
+
+ <!-- Bottom annotation -->
+ <text x="450" y="620" text-anchor="middle" font-size="11" fill="#444" font-style="italic">实时通信赢家是 Opus · 流媒体赢家是 AAC · 影院赢家是 Dolby/DTS · 无损两强并存</text>
+</svg>

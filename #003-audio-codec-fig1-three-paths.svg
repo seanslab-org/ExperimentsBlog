@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#1a1a1a">三种压缩思路</text>
+  <text x="450" y="54" text-anchor="middle" font-size="12" fill="#555">五十年 codec 演进的三个根 · 都是 LPC 1971 之后的不同分支</text>
+
+  <!-- Row 1: PCM 录波形 -->
+  <g transform="translate(0, 100)">
+    <!-- Left label -->
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">① 录波形</text>
+    <text x="50" y="40" font-size="11" fill="#555">PCM · 无压缩</text>
+    <text x="50" y="58" font-size="9" fill="#888">G.711 · 1972</text>
+    <text x="50" y="76" font-size="9" fill="#888">人类电话的祖先</text>
+
+    <!-- Visualization: sine wave with sampling dots -->
+    <path d="M 200,40 Q 230,10 260,40 T 320,40 T 380,40 T 440,40 T 500,40" fill="none" stroke="#888" stroke-width="1.2"/>
+    <!-- Sample points overlaid -->
+    <circle cx="200" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="215" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="230" cy="10" r="2.5" fill="#c4453d"/>
+    <circle cx="245" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="260" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="275" cy="58" r="2.5" fill="#c4453d"/>
+    <circle cx="290" cy="70" r="2.5" fill="#c4453d"/>
+    <circle cx="305" cy="58" r="2.5" fill="#c4453d"/>
+    <circle cx="320" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="335" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="350" cy="10" r="2.5" fill="#c4453d"/>
+    <circle cx="365" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="380" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="395" cy="58" r="2.5" fill="#c4453d"/>
+    <circle cx="410" cy="70" r="2.5" fill="#c4453d"/>
+    <circle cx="425" cy="58" r="2.5" fill="#c4453d"/>
+    <circle cx="440" cy="40" r="2.5" fill="#c4453d"/>
+    <circle cx="455" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="470" cy="10" r="2.5" fill="#c4453d"/>
+    <circle cx="485" cy="22" r="2.5" fill="#c4453d"/>
+    <circle cx="500" cy="40" r="2.5" fill="#c4453d"/>
+    <text x="350" y="100" text-anchor="middle" font-size="9" fill="#555" font-style="italic">每秒 8000 次采样 · 每点一个字节</text>
+
+    <!-- Right description -->
+    <g transform="translate(580, 0)">
+      <text x="0" y="20" font-size="13" font-weight="600" fill="#c4453d">→ 64 kbps</text>
+      <text x="0" y="44" font-size="11" fill="#1a1a1a">把声波"原样录下来"</text>
+      <text x="0" y="64" font-size="10" fill="#555" font-style="italic">像不打包搬家：</text>
+      <text x="0" y="80" font-size="10" fill="#555" font-style="italic">东西没少，但箱子很多</text>
+    </g>
+  </g>
+
+  <!-- Row 2: LPC 传乐器+拨弦 -->
+  <g transform="translate(0, 250)">
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">② 传乐器 + 拨弦</text>
+    <text x="50" y="40" font-size="11" fill="#555">LPC · 参数编码</text>
+    <text x="50" y="58" font-size="9" fill="#888">CELP / GSM / G.729 / SILK</text>
+    <text x="50" y="76" font-size="9" fill="#888">所有现代语音 codec 祖先</text>
+
+    <!-- Visualization: throat as instrument schematic -->
+    <!-- Excitation source (vocal cords) -->
+    <line x1="200" y1="40" x2="240" y2="40" stroke="#c4453d" stroke-width="2"/>
+    <circle cx="200" cy="40" r="3" fill="#c4453d"/>
+    <text x="195" y="20" text-anchor="middle" font-size="9" fill="#555">激励</text>
+    <text x="195" y="60" text-anchor="middle" font-size="8" fill="#888">声带</text>
+
+    <!-- Vocal tract (resonator) -->
+    <ellipse cx="320" cy="40" rx="60" ry="22" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="320" y="44" text-anchor="middle" font-size="10" fill="#1a1a1a">声道（共鸣箱）</text>
+
+    <!-- Output -->
+    <line x1="380" y1="40" x2="420" y2="40" stroke="#888" stroke-width="1.5" stroke-dasharray="3,2"/>
+    <text x="430" y="44" font-size="11" fill="#555">声音</text>
+
+    <!-- Annotation -->
+    <text x="320" y="100" text-anchor="middle" font-size="9" fill="#555" font-style="italic">不传声波 · 传"喉咙的形状 + 拨弦的力"</text>
+
+    <!-- Right description -->
+    <g transform="translate(580, 0)">
+      <text x="0" y="20" font-size="13" font-weight="600" fill="#c4453d">→ 8 kbps</text>
+      <text x="0" y="44" font-size="11" fill="#1a1a1a">不传声音，传"怎么发声"</text>
+      <text x="0" y="64" font-size="10" fill="#555" font-style="italic">对面的电脑装了同款</text>
+      <text x="0" y="80" font-size="10" fill="#555" font-style="italic">"喉咙模拟器"，自己重建</text>
+    </g>
+  </g>
+
+  <!-- Row 3: Psychoacoustic 扔掉听不见的 -->
+  <g transform="translate(0, 400)">
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">③ 扔掉听不见的</text>
+    <text x="50" y="40" font-size="11" fill="#555">心理声学 · 感知编码</text>
+    <text x="50" y="58" font-size="9" fill="#888">MP3 / AAC / Vorbis / Opus</text>
+    <text x="50" y="76" font-size="9" fill="#888">所有现代音乐 codec 内核</text>
+
+    <!-- Visualization: frequency spectrum with one strong signal masking neighbors -->
+    <!-- Bars representing frequencies -->
+    <g transform="translate(200, 20)">
+      <!-- Strong signal (loud) -->
+      <rect x="100" y="0" width="14" height="60" fill="#c4453d"/>
+      <text x="107" y="-4" text-anchor="middle" font-size="8" fill="#c4453d" font-weight="600">强信号</text>
+
+      <!-- Masked signals (faded) -->
+      <rect x="80" y="35" width="10" height="25" fill="#ddd"/>
+      <rect x="120" y="40" width="10" height="20" fill="#ddd"/>
+      <rect x="135" y="45" width="10" height="15" fill="#ddd"/>
+
+      <!-- Audible signals (kept) -->
+      <rect x="20" y="20" width="10" height="40" fill="#1a1a1a"/>
+      <rect x="40" y="25" width="10" height="35" fill="#1a1a1a"/>
+      <rect x="60" y="30" width="10" height="30" fill="#1a1a1a"/>
+      <rect x="160" y="35" width="10" height="25" fill="#1a1a1a"/>
+      <rect x="180" y="40" width="10" height="20" fill="#1a1a1a"/>
+      <rect x="200" y="38" width="10" height="22" fill="#1a1a1a"/>
+
+      <!-- Masking curve (dashed) -->
+      <path d="M 80,30 Q 107,20 145,38" fill="none" stroke="#c4453d" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/>
+    </g>
+
+    <text x="320" y="100" text-anchor="middle" font-size="9" fill="#555" font-style="italic">灰色 = 被强信号盖住、人耳听不见 → 不传</text>
+
+    <!-- Right description -->
+    <g transform="translate(580, 0)">
+      <text x="0" y="20" font-size="13" font-weight="600" fill="#c4453d">→ 128 kbps</text>
+      <text x="0" y="36" font-size="9" fill="#888">CD 是 1411 kbps</text>
+      <text x="0" y="60" font-size="11" fill="#1a1a1a">扔掉人耳听不见的部分</text>
+      <text x="0" y="80" font-size="10" fill="#555" font-style="italic">化妆师只画看得见的部分</text>
+    </g>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="450" y="565" text-anchor="middle" font-size="11" fill="#444" font-style="italic">三种思路 · 同一个根 · Atal &amp; Schroeder 1971 年那篇论文 LPC 之后的所有分支</text>
+</svg>

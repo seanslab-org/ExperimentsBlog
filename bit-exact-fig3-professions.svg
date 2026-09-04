@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="1200" height="660" fill="#fbfbf9"/>
+
+  <text x="600" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">所有"概率思维"专业都在保持方法论 bit-exact</text>
+  <text x="600" y="64" text-anchor="middle" font-size="13" fill="#666">结果你保证不了，但方法论必须严格——LLM 工程师终于走到这一步</text>
+
+  <!-- Column headers -->
+  <g transform="translate(60, 100)">
+    <rect x="0" y="0" width="200" height="48" fill="#1a1a1a"/>
+    <text x="100" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">专业</text>
+
+    <rect x="200" y="0" width="440" height="48" fill="#888"/>
+    <text x="420" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">结果是概率的</text>
+
+    <rect x="640" y="0" width="440" height="48" fill="#c4453d"/>
+    <text x="860" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">但方法论 bit-exact</text>
+  </g>
+
+  <!-- Row: 医生 -->
+  <g transform="translate(60, 170)">
+    <rect x="0" y="0" width="200" height="100" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">医生</text>
+    <text x="100" y="68" text-anchor="middle" font-size="10" fill="#888">几千年的实践</text>
+
+    <rect x="200" y="0" width="440" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="220" y="34" font-size="13" fill="#1a1a1a">不能保证治愈每个病人</text>
+    <text x="220" y="54" font-size="11" fill="#888">"80% 流感 · 15% 新冠 · 5% 其他"</text>
+    <text x="220" y="78" font-size="11" fill="#888">没有医生敢说 100% 确诊</text>
+
+    <rect x="640" y="0" width="440" height="100" fill="#fff" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="660" y="34" font-size="13" fill="#1a1a1a">诊断 protocol 必须严格</text>
+    <text x="660" y="54" font-size="11" fill="#888">同样症状必须按同样流程走</text>
+    <text x="660" y="78" font-size="11" fill="#888">偏离即医疗事故</text>
+  </g>
+
+  <!-- Row: 医学研究 -->
+  <g transform="translate(60, 280)">
+    <rect x="0" y="0" width="200" height="100" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">医学研究</text>
+    <text x="100" y="68" text-anchor="middle" font-size="10" fill="#888">RCT · 临床试验</text>
+
+    <rect x="200" y="0" width="440" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="220" y="34" font-size="13" fill="#1a1a1a">不能保证每次试验出阳性</text>
+    <text x="220" y="54" font-size="11" fill="#888">效应大小、置信区间、p-value</text>
+    <text x="220" y="78" font-size="11" fill="#888">每次药物试验都可能失败</text>
+
+    <rect x="640" y="0" width="440" height="100" fill="#fff" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="660" y="34" font-size="13" fill="#1a1a1a">RCT 实验设计必须 bit-exact</text>
+    <text x="660" y="54" font-size="11" fill="#888">Randomization · blinding · 对照组</text>
+    <text x="660" y="78" font-size="11" fill="#888">每一步必须可重复</text>
+  </g>
+
+  <!-- Row: 法官 -->
+  <g transform="translate(60, 390)">
+    <rect x="0" y="0" width="200" height="100" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">法官</text>
+    <text x="100" y="68" text-anchor="middle" font-size="10" fill="#888">法律体系</text>
+
+    <rect x="200" y="0" width="440" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="220" y="34" font-size="13" fill="#1a1a1a">不能保证每个判决都对</text>
+    <text x="220" y="54" font-size="11" fill="#888">"beyond reasonable doubt" ≈ 95% 阈值</text>
+    <text x="220" y="78" font-size="11" fill="#888">证据是概率的、记忆是不完整的</text>
+
+    <rect x="640" y="0" width="440" height="100" fill="#fff" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="660" y="34" font-size="13" fill="#1a1a1a">法律程序必须严格</text>
+    <text x="660" y="54" font-size="11" fill="#888">同样证据按同样程序走</text>
+    <text x="660" y="78" font-size="11" fill="#888">违反程序 = mistrial</text>
+  </g>
+
+  <!-- Row: 投资人 -->
+  <g transform="translate(60, 500)">
+    <rect x="0" y="0" width="200" height="100" fill="#fafafa" stroke="#ddd" stroke-width="1"/>
+    <text x="100" y="48" text-anchor="middle" font-size="18" font-weight="700" fill="#1a1a1a">投资人</text>
+    <text x="100" y="68" text-anchor="middle" font-size="10" fill="#888">量化 / 基本面</text>
+
+    <rect x="200" y="0" width="440" height="100" fill="#fff" stroke="#ddd" stroke-width="1"/>
+    <text x="220" y="34" font-size="13" fill="#1a1a1a">不能保证每笔投资都赚钱</text>
+    <text x="220" y="54" font-size="11" fill="#888">预期收益、夏普比率、最大回撤</text>
+    <text x="220" y="78" font-size="11" fill="#888">没有"这个股票一定涨"</text>
+
+    <rect x="640" y="0" width="440" height="100" fill="#fff" stroke="#c4453d" stroke-width="1.5"/>
+    <text x="660" y="34" font-size="13" fill="#1a1a1a">回测代码 · 风险模型必须 bit-exact</text>
+    <text x="660" y="54" font-size="11" fill="#888">同样输入必须产生同样回测结果</text>
+    <text x="660" y="78" font-size="11" fill="#888">否则你都不知道策略真正的表现</text>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="600" y="638" text-anchor="middle" font-size="12" fill="#c4453d" font-weight="600">LLM 工程师终于和医生、法官、投资人坐在同一桌——结果概率，但方法论 bit-exact</text>
+</svg>

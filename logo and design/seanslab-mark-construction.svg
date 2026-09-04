@@ -1,0 +1,105 @@
+<svg viewBox="-8 -22 196 140" xmlns="http://www.w3.org/2000/svg" aria-label="Seanslab mark construction">
+  <defs>
+    <pattern id="dot-grid" x="0" y="0" width="5" height="5" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="2.5" r="0.25" fill="currentColor" />
+    </pattern>
+  </defs>
+
+  <rect x="0" y="0" width="100" height="100" fill="url(#dot-grid)" opacity="0.22" />
+
+  <g stroke="currentColor" stroke-width="0.3" fill="none">
+    <circle cx="54" cy="54" r="26" />
+    <circle cx="32" cy="30" r="12" />
+    <circle cx="24" cy="20" r="4" />
+    <circle cx="28" cy="13" r="3" />
+    <circle cx="34" cy="15" r="2" />
+    <circle cx="28" cy="30" r="1.8" />
+    <rect x="40" y="78" width="10" height="16" rx="3" />
+    <rect x="58" y="78" width="10" height="16" rx="3" />
+  </g>
+
+  <g fill="currentColor">
+    <circle cx="54" cy="54" r="0.55" />
+    <circle cx="32" cy="30" r="0.5" />
+    <circle cx="24" cy="20" r="0.4" />
+    <circle cx="28" cy="13" r="0.4" />
+    <circle cx="34" cy="15" r="0.35" />
+    <circle cx="28" cy="30" r="0.3" />
+  </g>
+
+  <g stroke="currentColor" stroke-width="0.25" opacity="0.45">
+    <line x1="49"  y1="94" x2="49"  y2="100" />
+    <line x1="41"  y1="98" x2="49"  y2="98" />
+    <line x1="41"  y1="78" x2="38"  y2="78" />
+    <line x1="41"  y1="94" x2="38"  y2="94" />
+    <line x1="40"  y1="79" x2="40"  y2="93" />
+  </g>
+
+  <g font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace" fill="currentColor">
+    <text x="-8" y="-14" font-size="3.6" letter-spacing="0.35" font-weight="500">SEANSLAB</text>
+    <text x="-8" y="-8.5" font-size="2.3" letter-spacing="0.35" opacity="0.6">MARK &#183; CONSTRUCTION &#183; V1</text>
+  </g>
+
+  <g font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace" fill="currentColor">
+    <text x="120" y="2"  font-size="3" letter-spacing="0.35" font-weight="500">ELEMENTS</text>
+    <line x1="120" y1="4.5" x2="186" y2="4.5" stroke="currentColor" stroke-width="0.2" opacity="0.45" />
+
+    <g font-size="2.6">
+      <text x="120" y="10">body</text>
+      <text x="148" y="10" opacity="0.55">r</text>
+      <text x="168" y="10" text-anchor="end">26</text>
+
+      <text x="120" y="16">head</text>
+      <text x="148" y="16" opacity="0.55">r</text>
+      <text x="168" y="16" text-anchor="end">12</text>
+
+      <text x="120" y="22">trunk</text>
+      <text x="148" y="22" opacity="0.55">r</text>
+      <text x="168" y="22" text-anchor="end">4</text>
+
+      <text x="120" y="28">trunk</text>
+      <text x="148" y="28" opacity="0.55">r</text>
+      <text x="168" y="28" text-anchor="end">3</text>
+
+      <text x="120" y="34">trunk</text>
+      <text x="148" y="34" opacity="0.55">r</text>
+      <text x="168" y="34" text-anchor="end">2</text>
+
+      <text x="120" y="40">eye</text>
+      <text x="148" y="40" opacity="0.55">r</text>
+      <text x="168" y="40" text-anchor="end">1.8</text>
+
+      <text x="120" y="46">leg</text>
+      <text x="148" y="46" opacity="0.55">w &#215; h</text>
+      <text x="186" y="46" text-anchor="end">10 &#215; 16</text>
+    </g>
+
+    <text x="120" y="58" font-size="3" letter-spacing="0.35" font-weight="500">RULES</text>
+    <line x1="120" y1="60.5" x2="186" y2="60.5" stroke="currentColor" stroke-width="0.2" opacity="0.45" />
+
+    <g font-size="2.6">
+      <text x="120" y="66">curl</text>
+      <text x="186" y="66" text-anchor="end">135&#176; &#8594; 45&#176; &#8594; &#8722;45&#176;</text>
+
+      <text x="120" y="72">pairs</text>
+      <text x="186" y="72" text-anchor="end">tangent, 1 overlap</text>
+
+      <text x="120" y="78">eye</text>
+      <text x="186" y="78" text-anchor="end">mask cutout</text>
+    </g>
+
+    <text x="120" y="90" font-size="3" letter-spacing="0.35" font-weight="500">META</text>
+    <line x1="120" y1="92.5" x2="186" y2="92.5" stroke="currentColor" stroke-width="0.2" opacity="0.45" />
+
+    <g font-size="2.6">
+      <text x="120" y="98">view</text>
+      <text x="186" y="98" text-anchor="end">0 0 100 100</text>
+
+      <text x="120" y="104">shapes</text>
+      <text x="186" y="104" text-anchor="end">6 circles, 2 rects</text>
+
+      <text x="120" y="110">color</text>
+      <text x="186" y="110" text-anchor="end">currentColor</text>
+    </g>
+  </g>
+</svg>

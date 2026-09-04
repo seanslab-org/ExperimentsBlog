@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrowR" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c4453d"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="450" y="32" text-anchor="middle" font-size="18" font-weight="600" fill="#1a1a1a">三次筛选越来越快</text>
+  <text x="450" y="52" text-anchor="middle" font-size="12" fill="#555">demon 跑过的三个市场——每一次比上一次更快</text>
+
+  <!-- Lane 1: 桌面 OS -->
+  <g transform="translate(0, 90)">
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">桌面 OS</text>
+    <text x="50" y="38" font-size="11" fill="#555">1985 → 2005</text>
+    <text x="50" y="54" font-size="11" fill="#888">约 20 年</text>
+
+    <g font-size="9" fill="#aaa">
+      <text x="180" y="14" text-decoration="line-through">MS-DOS</text>
+      <text x="240" y="14" text-decoration="line-through">Mac System</text>
+      <text x="320" y="14" text-decoration="line-through">Apple DOS</text>
+      <text x="180" y="32" text-decoration="line-through">Atari TOS</text>
+      <text x="240" y="32" text-decoration="line-through">AmigaOS</text>
+      <text x="305" y="32" text-decoration="line-through">OS/2</text>
+      <text x="345" y="32" text-decoration="line-through">BeOS</text>
+      <text x="180" y="50" text-decoration="line-through">NeXTSTEP</text>
+      <text x="245" y="50" text-decoration="line-through">SCO Unix</text>
+      <text x="310" y="50" text-decoration="line-through">BBC OS</text>
+      <text x="180" y="68" text-decoration="line-through">Xenix</text>
+      <text x="220" y="68" text-decoration="line-through">AIX</text>
+      <text x="250" y="68" text-decoration="line-through">HP-UX</text>
+      <text x="295" y="68" text-decoration="line-through">Solaris</text>
+      <text x="350" y="68">……</text>
+    </g>
+
+    <line x1="430" y1="40" x2="540" y2="40" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+
+    <g font-size="13" font-weight="600" fill="#1a1a1a">
+      <text x="560" y="22">Windows</text>
+      <text x="560" y="42">macOS</text>
+      <text x="560" y="62">Linux</text>
+    </g>
+
+    <text x="710" y="32" font-size="11" fill="#555" font-style="italic">塌成 3 家</text>
+    <text x="710" y="50" font-size="9" fill="#888">消费者付学习账单</text>
+  </g>
+
+  <!-- Lane 2: 手机 OS -->
+  <g transform="translate(0, 220)">
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">手机 OS</text>
+    <text x="50" y="38" font-size="11" fill="#555">2007 → 2020</text>
+    <text x="50" y="54" font-size="11" fill="#888">约 13 年</text>
+
+    <g font-size="9" fill="#aaa">
+      <text x="180" y="14" text-decoration="line-through">Symbian</text>
+      <text x="240" y="14" text-decoration="line-through">Windows Mobile</text>
+      <text x="180" y="32" text-decoration="line-through">BlackBerry OS</text>
+      <text x="265" y="32" text-decoration="line-through">Palm OS</text>
+      <text x="320" y="32" text-decoration="line-through">Maemo</text>
+      <text x="180" y="50" text-decoration="line-through">MotoMagx</text>
+      <text x="240" y="50" text-decoration="line-through">DoCoMo i-mode</text>
+      <text x="180" y="68" text-decoration="line-through">Bada</text>
+      <text x="220" y="68" text-decoration="line-through">webOS</text>
+      <text x="270" y="68" text-decoration="line-through">Firefox OS</text>
+      <text x="345" y="68">……</text>
+    </g>
+
+    <line x1="430" y1="40" x2="540" y2="40" stroke="#c4453d" stroke-width="1.5" marker-end="url(#arrowR)"/>
+
+    <g font-size="13" font-weight="600" fill="#1a1a1a">
+      <text x="560" y="32">iOS</text>
+      <text x="560" y="52">Android</text>
+    </g>
+
+    <text x="710" y="32" font-size="11" fill="#555" font-style="italic">塌成 2 家</text>
+    <text x="710" y="50" font-size="9" fill="#888">开发者付重写账单</text>
+  </g>
+
+  <!-- Lane 3: AI / 编程语言 -->
+  <g transform="translate(0, 350)">
+    <text x="50" y="20" font-size="13" font-weight="600" fill="#1a1a1a">AI · 编程语言</text>
+    <text x="50" y="38" font-size="11" fill="#555">2024 → 2030?</text>
+    <text x="50" y="54" font-size="11" fill="#c4453d" font-weight="600">约 5–7 年</text>
+
+    <g font-size="9" fill="#aaa">
+      <text x="180" y="14" text-decoration="line-through">OCaml</text>
+      <text x="225" y="14" text-decoration="line-through">Haskell</text>
+      <text x="275" y="14" text-decoration="line-through">Erlang</text>
+      <text x="325" y="14" text-decoration="line-through">Smalltalk</text>
+      <text x="180" y="32" text-decoration="line-through">Scala</text>
+      <text x="220" y="32" text-decoration="line-through">Clojure</text>
+      <text x="280" y="32" text-decoration="line-through">F#</text>
+      <text x="310" y="32" text-decoration="line-through">Elixir</text>
+      <text x="180" y="50" text-decoration="line-through">FORTRAN</text>
+      <text x="240" y="50" text-decoration="line-through">COBOL</text>
+      <text x="290" y="50" text-decoration="line-through">Ada</text>
+      <text x="320" y="50" text-decoration="line-through">Pascal</text>
+      <text x="180" y="68" text-decoration="line-through">D · Nim · Zig</text>
+      <text x="248" y="68" text-decoration="line-through">Crystal</text>
+      <text x="295" y="68" text-decoration="line-through">Julia</text>
+      <text x="345" y="68">……</text>
+    </g>
+
+    <line x1="430" y1="40" x2="540" y2="40" stroke="#c4453d" stroke-width="2" marker-end="url(#arrowR)"/>
+
+    <g font-size="12" font-weight="600" fill="#1a1a1a">
+      <text x="560" y="22">Python · TS · Go · Rust</text>
+      <text x="560" y="42">Claude · ChatGPT · Apple</text>
+      <text x="560" y="62" font-style="italic" fill="#888" font-size="10">（开源栈：长尾保留）</text>
+    </g>
+
+    <text x="710" y="32" font-size="11" fill="#c4453d" font-weight="600">塌得最快</text>
+    <text x="710" y="50" font-size="9" fill="#c4453d">几家公司集中付电费</text>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="450" y="488" text-anchor="middle" font-size="11" fill="#444" font-style="italic">关键变化：账单付费方——从消费者&amp;开发者各自付，变成几家公司集中支付（GPU 集群）</text>
+</svg>

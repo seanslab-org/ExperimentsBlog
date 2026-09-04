@@ -1,0 +1,162 @@
+<svg viewBox="-10 -22 220 150" xmlns="http://www.w3.org/2000/svg" aria-label="Elephantulus asterism">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"  stop-color="#fff6dc" stop-opacity="0.85"/>
+      <stop offset="60%" stop-color="#fff6dc" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#fff6dc" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Night sky -->
+  <rect x="-10" y="-22" width="220" height="150" fill="#0b1128" />
+
+  <!-- Ambient distant stars -->
+  <g fill="#c8d1e8">
+    <circle cx="3"    cy="8"   r="0.22" opacity="0.55"/>
+    <circle cx="18"   cy="4"   r="0.32" opacity="0.8"/>
+    <circle cx="38"   cy="2"   r="0.18" opacity="0.45"/>
+    <circle cx="62"   cy="-2"  r="0.28" opacity="0.65"/>
+    <circle cx="79"   cy="6"   r="0.16" opacity="0.4"/>
+    <circle cx="93"   cy="10"  r="0.22" opacity="0.55"/>
+    <circle cx="104"  cy="4"   r="0.3"  opacity="0.7"/>
+    <circle cx="6"    cy="38"  r="0.22" opacity="0.55"/>
+    <circle cx="2"    cy="62"  r="0.26" opacity="0.6"/>
+    <circle cx="12"   cy="90"  r="0.18" opacity="0.5"/>
+    <circle cx="5"    cy="110" r="0.24" opacity="0.55"/>
+    <circle cx="24"   cy="52"  r="0.2"  opacity="0.5"/>
+    <circle cx="42"   cy="42"  r="0.24" opacity="0.6"/>
+    <circle cx="68"   cy="34"  r="0.18" opacity="0.5"/>
+    <circle cx="78"   cy="72"  r="0.22" opacity="0.55"/>
+    <circle cx="90"   cy="48"  r="0.28" opacity="0.65"/>
+    <circle cx="96"   cy="92"  r="0.2"  opacity="0.5"/>
+    <circle cx="104"  cy="112" r="0.24" opacity="0.55"/>
+    <circle cx="82"   cy="108" r="0.18" opacity="0.45"/>
+    <circle cx="30"   cy="72"  r="0.22" opacity="0.5"/>
+    <circle cx="38"   cy="116" r="0.2"  opacity="0.5"/>
+    <circle cx="18"   cy="68"  r="0.16" opacity="0.4"/>
+    <circle cx="56"   cy="22"  r="0.22" opacity="0.55"/>
+    <circle cx="48"   cy="66"  r="0.2"  opacity="0.5"/>
+    <circle cx="72"   cy="110" r="0.24" opacity="0.6"/>
+    <circle cx="118"  cy="120" r="0.26" opacity="0.55"/>
+    <circle cx="148"  cy="116" r="0.2"  opacity="0.5"/>
+    <circle cx="170"  cy="108" r="0.24" opacity="0.55"/>
+    <circle cx="195"  cy="118" r="0.18" opacity="0.45"/>
+    <circle cx="200"  cy="90"  r="0.22" opacity="0.55"/>
+  </g>
+
+  <!-- Asterism connecting lines -->
+  <g stroke="#dfe4f4" stroke-width="0.22" opacity="0.5" fill="none" stroke-linecap="round">
+    <line x1="34" y1="15" x2="28" y2="13"/>
+    <line x1="28" y1="13" x2="24" y2="20"/>
+    <line x1="24" y1="20" x2="32" y2="30"/>
+    <line x1="32" y1="30" x2="28" y2="30"/>
+    <line x1="32" y1="30" x2="54" y2="54"/>
+    <line x1="54" y1="54" x2="45" y2="86"/>
+    <line x1="54" y1="54" x2="63" y2="86"/>
+  </g>
+
+  <!-- Star glows -->
+  <g>
+    <circle cx="54" cy="54" r="6.5" fill="url(#glow)"/>
+    <circle cx="32" cy="30" r="4.2" fill="url(#glow)"/>
+    <circle cx="45" cy="86" r="3.4" fill="url(#glow)"/>
+    <circle cx="63" cy="86" r="3.4" fill="url(#glow)"/>
+    <circle cx="24" cy="20" r="2.6" fill="url(#glow)"/>
+    <circle cx="28" cy="13" r="2.2" fill="url(#glow)"/>
+    <circle cx="34" cy="15" r="1.9" fill="url(#glow)"/>
+    <circle cx="28" cy="30" r="1.7" fill="url(#glow)"/>
+  </g>
+
+  <!-- Stars -->
+  <g fill="#fff6dc">
+    <circle cx="54" cy="54" r="1.4"/>
+    <circle cx="32" cy="30" r="0.95"/>
+    <circle cx="45" cy="86" r="0.75"/>
+    <circle cx="63" cy="86" r="0.75"/>
+    <circle cx="24" cy="20" r="0.6"/>
+    <circle cx="28" cy="13" r="0.55"/>
+    <circle cx="34" cy="15" r="0.5"/>
+    <circle cx="28" cy="30" r="0.45"/>
+  </g>
+
+  <!-- Star labels -->
+  <g font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace" fill="#cdd9ed">
+    <text x="59"   y="55"    font-size="2.6" opacity="0.95">&#945;</text>
+    <text x="65"   y="55"    font-size="2.2" opacity="0.62">Elephantuli</text>
+    <text x="37"   y="31"    font-size="2.6" opacity="0.95">&#946;</text>
+    <text x="43"   y="31"    font-size="2.2" opacity="0.62">Capitis</text>
+    <text x="43"   y="90"    font-size="2.6" opacity="0.95" text-anchor="end">&#947;</text>
+    <text x="41"   y="90"    font-size="2.2" opacity="0.62" text-anchor="end">Pedis</text>
+    <text x="65"   y="90"    font-size="2.6" opacity="0.95">&#948;</text>
+    <text x="71"   y="90"    font-size="2.2" opacity="0.62">Pedis Alter</text>
+    <text x="20"   y="20"    font-size="2.6" opacity="0.95" text-anchor="end">&#949;</text>
+    <text x="24"   y="10"    font-size="2.6" opacity="0.95" text-anchor="middle">&#950;</text>
+    <text x="38"   y="13"    font-size="2.6" opacity="0.95">&#951;</text>
+    <text x="26"   y="32"    font-size="2.6" opacity="0.95" text-anchor="end">&#952;</text>
+  </g>
+
+  <!-- Title block -->
+  <g font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace" fill="#f0ead2">
+    <text x="-8" y="-13" font-size="4.4" letter-spacing="0.45" font-weight="500">ELEPHANTULUS</text>
+    <text x="-8" y="-7.5" font-size="2.3" letter-spacing="0.38" opacity="0.65">THE LITTLE ELEPHANT &#183; UNOFFICIAL ASTERISM &#183; 8 STARS</text>
+  </g>
+
+  <!-- Catalog panel -->
+  <g font-family="'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace" fill="#cdd9ed">
+    <text x="120" y="2"  font-size="2.9" letter-spacing="0.35" font-weight="500" fill="#f0ead2">CATALOG</text>
+    <line x1="120" y1="4.5" x2="196" y2="4.5" stroke="#cdd9ed" stroke-width="0.18" opacity="0.35"/>
+
+    <g font-size="2.5">
+      <text x="120" y="10" fill="#f0ead2">&#945;</text>
+      <text x="127" y="10">Elephantuli</text>
+      <text x="196" y="10" text-anchor="end" opacity="0.65">body</text>
+
+      <text x="120" y="16" fill="#f0ead2">&#946;</text>
+      <text x="127" y="16">Capitis</text>
+      <text x="196" y="16" text-anchor="end" opacity="0.65">head</text>
+
+      <text x="120" y="22" fill="#f0ead2">&#947;</text>
+      <text x="127" y="22">Pedis</text>
+      <text x="196" y="22" text-anchor="end" opacity="0.65">left foot</text>
+
+      <text x="120" y="28" fill="#f0ead2">&#948;</text>
+      <text x="127" y="28">Pedis Alter</text>
+      <text x="196" y="28" text-anchor="end" opacity="0.65">right foot</text>
+
+      <text x="120" y="34" fill="#f0ead2">&#949;</text>
+      <text x="127" y="34">Nasi</text>
+      <text x="196" y="34" text-anchor="end" opacity="0.65">trunk, base</text>
+
+      <text x="120" y="40" fill="#f0ead2">&#950;</text>
+      <text x="127" y="40">Nasi Medii</text>
+      <text x="196" y="40" text-anchor="end" opacity="0.65">trunk, middle</text>
+
+      <text x="120" y="46" fill="#f0ead2">&#951;</text>
+      <text x="127" y="46">Nasi Apicis</text>
+      <text x="196" y="46" text-anchor="end" opacity="0.65">trunk, tip</text>
+
+      <text x="120" y="52" fill="#f0ead2">&#952;</text>
+      <text x="127" y="52">Oculi</text>
+      <text x="196" y="52" text-anchor="end" opacity="0.65">eye</text>
+    </g>
+
+    <text x="120" y="66" font-size="2.9" letter-spacing="0.35" font-weight="500" fill="#f0ead2">LORE</text>
+    <line x1="120" y1="68.5" x2="196" y2="68.5" stroke="#cdd9ed" stroke-width="0.18" opacity="0.35"/>
+    <g font-size="2.4" opacity="0.85">
+      <text x="120" y="74">a calf turns to look back.</text>
+      <text x="120" y="79.5">the glance is held still.</text>
+      <text x="120" y="85">the trunk, curled, salutes</text>
+      <text x="120" y="90.5">the mother constellation</text>
+      <text x="120" y="96">from which it came.</text>
+    </g>
+
+    <text x="120" y="108" font-size="2.9" letter-spacing="0.35" font-weight="500" fill="#f0ead2">COORDS</text>
+    <line x1="120" y1="110.5" x2="196" y2="110.5" stroke="#cdd9ed" stroke-width="0.18" opacity="0.35"/>
+    <g font-size="2.3" opacity="0.75">
+      <text x="120" y="116">frame</text>
+      <text x="196" y="116" text-anchor="end">100 &#215; 100</text>
+      <text x="120" y="121">stars</text>
+      <text x="196" y="121" text-anchor="end">8</text>
+    </g>
+  </g>
+</svg>

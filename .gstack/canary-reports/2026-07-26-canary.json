@@ -1,0 +1,17 @@
+{
+  "status": "healthy",
+  "date": "2026-07-26",
+  "commit": "dc54d1f5b7d10e7f80ef5cadfa59ddde2d719914",
+  "branch": "main",
+  "production_url": "https://blog.seanslab.org",
+  "checks": {
+    "about_http_status": 200,
+    "about_marker_consecutive_checks": 2,
+    "star_chart_http_status": 200,
+    "star_mapping_current": true,
+    "docknote_http_status": 404,
+    "stale_docknote_references": false,
+    "visual_check": "passed"
+  },
+  "screenshot": "screenshots/about-dc54d1f.png"
+}

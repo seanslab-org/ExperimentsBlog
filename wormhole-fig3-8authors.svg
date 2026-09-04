@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="1200" height="760" fill="#fbfbf9"/>
+
+  <text x="600" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">2017 → 2025 · Attention 论文的 8 个作者今天在哪</text>
+  <text x="600" y="64" text-anchor="middle" font-size="13" fill="#666">8 年后 · 4 个 CEO · 1 个 Google 联合 lead · 3 个顶尖实验室核心 · 一篇论文，八个虫洞</text>
+
+  <line x1="100" y1="90" x2="1100" y2="90" stroke="#c4453d" stroke-width="1.5"/>
+
+  <!-- Row 1 -->
+  <g transform="translate(80, 130)">
+
+    <!-- Card 1: Vaswani -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="260" height="140" fill="#fff" stroke="#c4453d" stroke-width="2"/>
+      <text x="15" y="30" font-size="16" font-weight="700" fill="#1a1a1a">Ashish Vaswani</text>
+      <text x="15" y="50" font-size="11" fill="#888">2017 当时：Google Brain</text>
+      <line x1="15" y1="62" x2="245" y2="62" stroke="#eee" stroke-width="1"/>
+      <text x="15" y="84" font-size="13" font-weight="600" fill="#c4453d">Essential AI · CEO</text>
+      <text x="15" y="103" font-size="11" fill="#555">第二次创业（第一次 Adept 失败 → Amazon）</text>
+      <text x="15" y="123" font-size="12" fill="#1a1a1a" font-weight="600">2025 估值 10 亿美元</text>
+    </g>
+
+    <!-- Card 2: Shazeer -->
+    <g transform="translate(280, 0)">
+      <rect x="0" y="0" width="260" height="140" fill="#fff" stroke="#c4453d" stroke-width="2"/>
+      <text x="15" y="30" font-size="16" font-weight="700" fill="#1a1a1a">Noam Shazeer</text>
+      <text x="15" y="50" font-size="11" fill="#888">2017 当时：Google Brain</text>
+      <line x1="15" y1="62" x2="245" y2="62" stroke="#eee" stroke-width="1"/>
+      <text x="15" y="84" font-size="13" font-weight="600" fill="#c4453d">Google Gemini · 联合 lead</text>
+      <text x="15" y="103" font-size="11" fill="#555">出走办 Character.AI · 2024 回归</text>
+      <text x="15" y="123" font-size="12" fill="#1a1a1a" font-weight="600">27 亿美元 license 请回</text>
+    </g>
+
+    <!-- Card 3: Parmar -->
+    <g transform="translate(560, 0)">
+      <rect x="0" y="0" width="260" height="140" fill="#fff" stroke="#c4453d" stroke-width="2"/>
+      <text x="15" y="30" font-size="16" font-weight="700" fill="#1a1a1a">Niki Parmar</text>
+      <text x="15" y="50" font-size="11" fill="#888">2017 当时：Google Brain</text>
+      <line x1="15" y1="62" x2="245" y2="62" stroke="#eee" stroke-width="1"/>
+      <text x="15" y="84" font-size="13" font-weight="600" fill="#c4453d">Anthropic</text>
+      <text x="15" y="103" font-size="11" fill="#555">先创办 Adept · 失败后加入</text>
+      <text x="15" y="123" font-size="12" fill="#1a1a1a" font-weight="600">站在 OpenAI 的对立面</text>
+    </g>
+
+    <!-- Card 4: Uszkoreit -->
+    <g transform="translate(840, 0)">
+      <rect x="0" y="0" width="260" height="140" fill="#fff" stroke="#c4453d" stroke-width="2"/>
+      <text x="15" y="30" font-size="16" font-weight="700" fill="#1a1a1a">Jakob Uszkoreit</text>
+      <text x="15" y="50" font-size="11" fill="#888">2017 当时：Google Brain</text>
+      <line x1="15" y1="62" x2="245" y2="62" stroke="#eee" stroke-width="1"/>
+      <text x="15" y="84" font-size="13" font-weight="600" fill="#c4453d">Inceptive · CEO</text>
+      <text x="15" y="103" font-size="11" fill="#555">用 Transformer 设计 mRNA 疫苗</text>
+      <text x="15" y="123" font-size="12" fill="#1a1a1a" font-weight="600">把虫洞拐到生物科技</text>
+    </g>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(80, 290)">
+
+    <!-- Card 5: Jones -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="260" height="140" fill="#fff" stroke="#c4453d" stroke-width="2"/>
+      <text x="15" y="30" font-size="16" font-weight="700" fill="#1a1a1a">Llion Jones</text>
+      <text x="15" y="50" font-size="11" fill="#888">2017 当时：Google Research</text>
+      <line x1="15" y1="62" x2="245" y2="62" stroke="#eee" stroke-width="1"/>
+      <text x="15" y="84" font-size="13" font-weight="600" fill="#c4453d">Sakana AI · 共同创办</text>
+      <text x="15" y="103" font-size="11" fill="#555">东京 · 小模型 + 多个体协作</text>
+      <text x="15" y="123" font-size="12" fill="#1a1a1a" font-weight="600">日本第一个 AI 独角兽</text>
+    </g>
+
+    <!-- Card 6: Gomez -->
+    <g transform="translate(280, 0)">
+      <rect x="0" y="0" width="260" height="140" fill="#fff" stroke="#c4453d" stroke-width="2"/>
+      <text x="15" y="30" font-size="16" font-weight="700" fill="#1a1a1a">Aidan Gomez</text>
+      <text x="15" y="50" font-size="11" fill="#888">2017 当时：20 岁本科实习生</text>
+      <line x1="15" y1="62" x2="245" y2="62" stroke="#eee" stroke-width="1"/>
+      <text x="15" y="84" font-size="13" font-weight="600" fill="#c4453d">Cohere · CEO</text>
+      <text x="15" y="103" font-size="11" fill="#555">企业级 LLM · 30 岁是 CEO</text>
+      <text x="15" y="123" font-size="12" fill="#1a1a1a" font-weight="600">2025 估值 50 亿</text>
+    </g>
+
+    <!-- Card 7: Kaiser -->
+    <g transform="translate(560, 0)">
+      <rect x="0" y="0" width="260" height="140" fill="#fff" stroke="#c4453d" stroke-width="2"/>
+      <text x="15" y="30" font-size="16" font-weight="700" fill="#1a1a1a">Łukasz Kaiser</text>
+      <text x="15" y="50" font-size="11" fill="#888">2017 当时：Google Research</text>
+      <line x1="15" y1="62" x2="245" y2="62" stroke="#eee" stroke-width="1"/>
+      <text x="15" y="84" font-size="13" font-weight="600" fill="#c4453d">OpenAI</text>
+      <text x="15" y="103" font-size="11" fill="#555">GPT-4 / GPT-5 核心研究员</text>
+      <text x="15" y="123" font-size="12" fill="#1a1a1a" font-weight="600">在虫洞的另一端</text>
+    </g>
+
+    <!-- Card 8: Polosukhin -->
+    <g transform="translate(840, 0)">
+      <rect x="0" y="0" width="260" height="140" fill="#fff" stroke="#c4453d" stroke-width="2"/>
+      <text x="15" y="30" font-size="16" font-weight="700" fill="#1a1a1a">Illia Polosukhin</text>
+      <text x="15" y="50" font-size="11" fill="#888">2017 当时：Google Research</text>
+      <line x1="15" y1="62" x2="245" y2="62" stroke="#eee" stroke-width="1"/>
+      <text x="15" y="84" font-size="13" font-weight="600" fill="#c4453d">NEAR Protocol · 创办</text>
+      <text x="15" y="103" font-size="11" fill="#555">最早出走 · 走 Web3 + 用户自治 AI</text>
+      <text x="15" y="123" font-size="12" fill="#1a1a1a" font-weight="600">绕一圈又回 AI 主战场</text>
+    </g>
+  </g>
+
+  <!-- Summary block -->
+  <g transform="translate(80, 470)">
+    <rect x="0" y="0" width="1040" height="220" fill="#fff5f4" stroke="#c4453d" stroke-width="1.5"/>
+
+    <text x="30" y="40" font-size="16" font-weight="700" fill="#c4453d">8 年后的合计</text>
+
+    <text x="30" y="74" font-size="13" fill="#1a1a1a">· <tspan font-weight="600">4 个 AI 公司 CEO</tspan>（Vaswani、Gomez、Jones、Uszkoreit）</text>
+    <text x="30" y="98" font-size="13" fill="#1a1a1a">· <tspan font-weight="600">1 个 Google Gemini 联合 lead</tspan>（Shazeer，付出 27 亿美元 license）</text>
+    <text x="30" y="122" font-size="13" fill="#1a1a1a">· <tspan font-weight="600">2 个顶尖实验室核心</tspan>（Parmar 在 Anthropic · Kaiser 在 OpenAI）</text>
+    <text x="30" y="146" font-size="13" fill="#1a1a1a">· <tspan font-weight="600">1 个跨界创办</tspan>（Polosukhin · NEAR Protocol）</text>
+
+    <line x1="30" y1="162" x2="1010" y2="162" stroke="#c4453d" stroke-width="0.5" stroke-dasharray="3,2"/>
+
+    <text x="30" y="190" font-size="13" fill="#1a1a1a" font-weight="600">没有一个人在做"科研成果转化"。</text>
+    <text x="30" y="208" font-size="13" fill="#1a1a1a">那张合影里站着的不是 8 个研究员——是 <tspan font-weight="700" fill="#c4453d">8 个虫洞的入口</tspan>。</text>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="600" y="730" text-anchor="middle" font-size="11" fill="#444" font-style="italic">一篇论文 · 一群人 · 八个 AI 帝国 · 这就是研究到产品的距离归零</text>
+</svg>

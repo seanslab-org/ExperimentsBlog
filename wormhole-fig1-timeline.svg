@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <rect width="1100" height="660" fill="#fbfbf9"/>
+
+  <!-- Title -->
+  <text x="550" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">研究到产品的距离 · 从十年级到周级</text>
+  <text x="550" y="64" text-anchor="middle" font-size="13" fill="#666">每一行是一项研究突破到产品落地的时间 · 时间轴非线性</text>
+
+  <line x1="80" y1="90" x2="1020" y2="90" stroke="#ddd" stroke-width="0.5"/>
+
+  <!-- 前 AI 时代 group label -->
+  <text x="80" y="120" font-size="12" fill="#888" font-weight="600" letter-spacing="2">二十世纪 · 五段通道</text>
+
+  <!-- Row: 晶体管 -->
+  <g transform="translate(0, 145)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">晶体管</text>
+    <text x="80" y="18" font-size="10" fill="#888">Bell Labs 1947 → TR-1 收音机 1954</text>
+    <rect x="280" y="-12" width="500" height="20" fill="#888"/>
+    <text x="800" y="3" font-size="13" fill="#1a1a1a" font-weight="600">7 年</text>
+  </g>
+
+  <!-- Row: Internet TCP -->
+  <g transform="translate(0, 195)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">Internet TCP</text>
+    <text x="80" y="18" font-size="10" fill="#888">RFC 1973 → 普通家庭上网 1995</text>
+    <rect x="280" y="-12" width="700" height="20" fill="#888"/>
+    <text x="1000" y="3" font-size="13" fill="#1a1a1a" font-weight="600" text-anchor="end">22 年</text>
+  </g>
+
+  <!-- Row: CRISPR -->
+  <g transform="translate(0, 245)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">CRISPR</text>
+    <text x="80" y="18" font-size="10" fill="#888">Berkeley 2012 → Casgevy 治疗获批 2023</text>
+    <rect x="280" y="-12" width="600" height="20" fill="#888"/>
+    <text x="900" y="3" font-size="13" fill="#1a1a1a" font-weight="600">11 年</text>
+  </g>
+
+  <line x1="80" y1="285" x2="1020" y2="285" stroke="#ddd" stroke-width="0.5"/>
+
+  <!-- AI 时代 group label -->
+  <text x="80" y="315" font-size="12" fill="#c4453d" font-weight="600" letter-spacing="2">AI 时代 · 一段通道</text>
+
+  <!-- Row: Attention -->
+  <g transform="translate(0, 345)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">Attention 论文</text>
+    <text x="80" y="18" font-size="10" fill="#888">arXiv 2017 → ChatGPT 2022</text>
+    <rect x="280" y="-12" width="280" height="20" fill="#c4453d" opacity="0.7"/>
+    <text x="580" y="3" font-size="13" fill="#1a1a1a" font-weight="600">5 年</text>
+  </g>
+
+  <!-- Row: CLIP -->
+  <g transform="translate(0, 395)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">CLIP</text>
+    <text x="80" y="18" font-size="10" fill="#888">OpenAI 2021.1 → Stable Diffusion 2022.8</text>
+    <rect x="280" y="-12" width="120" height="20" fill="#c4453d" opacity="0.8"/>
+    <text x="420" y="3" font-size="13" fill="#1a1a1a" font-weight="600">半年</text>
+  </g>
+
+  <!-- Row: Whisper -->
+  <g transform="translate(0, 445)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">Whisper</text>
+    <text x="80" y="18" font-size="10" fill="#888">OpenAI 2022.9 → 论文 + 权重同步发布</text>
+    <rect x="280" y="-12" width="4" height="20" fill="#c4453d"/>
+    <text x="294" y="3" font-size="13" fill="#1a1a1a" font-weight="600">0 · 同步</text>
+  </g>
+
+  <!-- Row: ControlNet -->
+  <g transform="translate(0, 495)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">ControlNet</text>
+    <text x="80" y="18" font-size="10" fill="#888">arXiv 2023.2.10 → 全球 SD 标配</text>
+    <rect x="280" y="-12" width="20" height="20" fill="#c4453d"/>
+    <text x="310" y="3" font-size="13" fill="#1a1a1a" font-weight="600">2 周</text>
+  </g>
+
+  <!-- Row: Llama -->
+  <g transform="translate(0, 545)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">Llama</text>
+    <text x="80" y="18" font-size="10" fill="#888">Meta 2023.2 → llama.cpp 跑 MacBook</text>
+    <rect x="280" y="-12" width="8" height="20" fill="#c4453d"/>
+    <text x="298" y="3" font-size="13" fill="#1a1a1a" font-weight="600">数日</text>
+  </g>
+
+  <!-- Row: DeepSeek R1 -->
+  <g transform="translate(0, 595)">
+    <text x="80" y="0" font-size="13" fill="#1a1a1a" font-weight="500">DeepSeek R1</text>
+    <text x="80" y="18" font-size="10" fill="#888">arXiv 2025.1.20 → 英伟达蒸发 5890 亿</text>
+    <rect x="280" y="-12" width="14" height="20" fill="#c4453d"/>
+    <text x="304" y="3" font-size="13" fill="#1a1a1a" font-weight="600">7 天</text>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="550" y="645" text-anchor="middle" font-size="11" fill="#444" font-style="italic">从 22 年压到 0 · 这条曲线不是渐进，是指数级压缩 · 虫洞的物理基础是码本统一</text>
+</svg>

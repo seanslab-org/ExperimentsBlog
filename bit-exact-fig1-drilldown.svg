@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 720" font-family="-apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,0 L5,10 z" fill="#c4453d"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="720" fill="#fbfbf9"/>
+
+  <text x="550" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a1a">2002 · 调到 bit-exact 的层层下钻</text>
+  <text x="550" y="64" text-anchor="middle" font-size="13" fill="#666">三到四个月里，每追到一个 bit 偏离，都要钻完整整四层</text>
+
+  <line x1="100" y1="90" x2="1000" y2="90" stroke="#c4453d" stroke-width="1.5"/>
+
+  <!-- Layer 1: Test vectors -->
+  <g transform="translate(100, 130)">
+    <rect x="0" y="0" width="900" height="100" fill="#fff" stroke="#888" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#1a1a1a">层 1 · 全部 ITU 测试向量集</text>
+    <text x="20" y="48" font-size="11" fill="#555">输入：几千个 .pcm 语音文件 · 每个对应一段 reference output bit-stream</text>
+    <text x="20" y="68" font-size="11" fill="#1a1a1a">跑 codec → 输出 bit-stream → bit-by-bit 跟 reference 对比 → <tspan font-weight="700" fill="#c4453d">找到第一个失败的向量</tspan></text>
+    <text x="20" y="88" font-size="10" fill="#888" font-style="italic">例：vector #347 在第 124 帧之后开始偏离</text>
+  </g>
+
+  <line x1="550" y1="240" x2="550" y2="270" stroke="#c4453d" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Layer 2: Frames -->
+  <g transform="translate(100, 280)">
+    <rect x="0" y="0" width="900" height="100" fill="#fff" stroke="#888" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#1a1a1a">层 2 · 在那个失败向量里 · 几百帧</text>
+    <text x="20" y="48" font-size="11" fill="#555">每帧 20ms 语音 · 包含 LPC 系数 + 激励 + 量化器索引几十个 intermediate state</text>
+    <text x="20" y="68" font-size="11" fill="#1a1a1a">dump 每一帧的所有 intermediate state → 跟 reference 比 → <tspan font-weight="700" fill="#c4453d">找第一个偏离的帧</tspan></text>
+    <text x="20" y="88" font-size="10" fill="#888" font-style="italic">例：frame #124 · LPC 系数 a[3] 差 1 LSB</text>
+  </g>
+
+  <line x1="550" y1="390" x2="550" y2="420" stroke="#c4453d" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Layer 3: Inner loop iterations -->
+  <g transform="translate(100, 430)">
+    <rect x="0" y="0" width="900" height="100" fill="#fff" stroke="#888" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#1a1a1a">层 3 · 在那一帧里 · 几十个内循环 · 每个循环几百次乘加</text>
+    <text x="20" y="48" font-size="11" fill="#555">ACELP algebraic codebook search · LPC analysis · pitch tracker 等内循环</text>
+    <text x="20" y="68" font-size="11" fill="#1a1a1a">dump 每个内循环每一次迭代的累加器 → 跟 reference 比 → <tspan font-weight="700" fill="#c4453d">找第一个偏离的迭代</tspan></text>
+    <text x="20" y="88" font-size="10" fill="#888" font-style="italic">例：algebraic codebook search · iteration #17 · 40-bit 累加器值差 1</text>
+  </g>
+
+  <line x1="550" y1="540" x2="550" y2="570" stroke="#c4453d" stroke-width="2" marker-end="url(#arrowDown)"/>
+
+  <!-- Layer 4: Basic operator -->
+  <g transform="translate(100, 580)">
+    <rect x="0" y="0" width="900" height="100" fill="#fff5f4" stroke="#c4453d" stroke-width="2"/>
+    <text x="20" y="28" font-size="13" font-weight="700" fill="#c4453d">层 4 · 在那一次乘加里 · 一个 basic operator 的 corner case</text>
+    <text x="20" y="48" font-size="11" fill="#555">L_mac、L_msu、mult_r、saturate、L_shl……ITU 定义的几十个 basic operator</text>
+    <text x="20" y="68" font-size="11" fill="#1a1a1a">检查那一次操作的边界条件 → <tspan font-weight="700" fill="#c4453d">找到 1 LSB 差异的根因</tspan> → 修</text>
+    <text x="20" y="88" font-size="10" fill="#888" font-style="italic">例：mult_r 在 0x7FFF × 0x7FFF + round 时，我汇编写的 saturate 比 reference 早触发了一次</text>
+  </g>
+
+  <!-- Bottom annotation -->
+  <text x="550" y="704" text-anchor="middle" font-size="11" fill="#444" font-style="italic">每一个 bit 偏离背后都是四层下钻 · 三到四个月的工作几乎全在这条 loop 上</text>
+</svg>
