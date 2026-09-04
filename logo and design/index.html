@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seanslab Mark</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #f4f1eb;
+      --paper-deep: #e7e0d7;
+      --ink: #111111;
+      --muted: rgba(17, 17, 17, 0.66);
+      --line: rgba(17, 17, 17, 0.1);
+      --card: rgba(255, 255, 255, 0.78);
+      --shadow: 0 24px 80px rgba(17, 17, 17, 0.08);
+      --radius: 28px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Sora", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(17, 17, 17, 0.045), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(17, 17, 17, 0.04), transparent 36%),
+        linear-gradient(180deg, var(--paper), var(--paper-deep));
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 52px 0 84px;
+    }
+
+    .eyebrow,
+    .meta,
+    .download,
+    .mono {
+      font-family: "IBM Plex Mono", monospace;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(3rem, 9vw, 5.6rem);
+      line-height: 0.94;
+      letter-spacing: -0.06em;
+      max-width: 14ch;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 1.05rem;
+      margin-bottom: 40px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      margin-top: 22px;
+    }
+
+    .panel {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .panel h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      letter-spacing: -0.03em;
+    }
+
+    .panel .sub {
+      margin: 0 0 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      font-family: "IBM Plex Mono", monospace;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .mark-stage {
+      aspect-ratio: 1;
+      border-radius: 22px;
+      border: 1px solid rgba(17, 17, 17, 0.08);
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at top, rgba(17, 17, 17, 0.03), transparent 52%),
+        rgba(255, 255, 255, 0.76);
+      padding: 30px;
+      color: var(--ink);
+    }
+
+    .mark-stage svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .download {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 11.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(17, 17, 17, 0.3);
+      padding-bottom: 3px;
+    }
+
+    .story {
+      margin-top: 30px;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--card);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+    }
+
+    .story h2 {
+      margin: 0 0 14px;
+      font-size: 0.92rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .story p {
+      margin: 0 0 12px;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 80ch;
+    }
+
+    .sequence {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .fib {
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.62);
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 13.5px;
+      letter-spacing: 0.08em;
+    }
+
+    .fib strong {
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .fib span {
+      color: var(--muted);
+    }
+
+    .sizes {
+      margin-top: 26px;
+      display: flex;
+      align-items: flex-end;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .size-sample {
+      display: grid;
+      gap: 10px;
+      justify-items: center;
+    }
+
+    .size-sample .box {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.76);
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+    }
+
+    .size-sample svg {
+      overflow: visible;
+    }
+
+    .size-sample .label {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    .s16 .box { width: 16px;  height: 16px; }
+    .s16 .box svg { width: 16px; height: 16px; }
+    .s32 .box { width: 32px;  height: 32px; }
+    .s32 .box svg { width: 32px; height: 32px; }
+    .s64 .box { width: 64px;  height: 64px; }
+    .s64 .box svg { width: 64px; height: 64px; }
+    .s128 .box { width: 128px; height: 128px; }
+    .s128 .box svg { width: 128px; height: 128px; }
+
+    .starchart-stage {
+      margin-top: 20px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: #0b1128;
+      border: 1px solid rgba(17, 17, 17, 0.08);
+    }
+
+    .starchart-stage img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .note {
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-family: "IBM Plex Mono", monospace;
+    }
+
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="eyebrow">Seanslab / Master Mark</div>
+    <h1>Six circles. Two rectangles.</h1>
+    <p class="hero-copy">
+      A baby elephant, glancing back from its big round butt. The whole mark is
+      six circles and two rounded rectangles. Adjacent circles are tangent with
+      a small overlap so the silhouette reads as a single body. The trunk reads
+      as a curl because its three circles trace a 90&deg; rotation sequence.
+    </p>
+
+    <div class="grid">
+      <section class="panel">
+        <h2>The mark</h2>
+        <div class="sub">Final silhouette</div>
+        <div class="mark-stage">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-label="Seanslab mark">
+            <defs>
+              <mask id="final-eye">
+                <rect width="100" height="100" fill="white" />
+                <circle cx="28" cy="30" r="1.8" fill="black" />
+              </mask>
+            </defs>
+            <g fill="currentColor" mask="url(#final-eye)">
+              <circle cx="54" cy="54" r="26" />
+              <rect x="40" y="78" width="10" height="16" rx="3" />
+              <rect x="58" y="78" width="10" height="16" rx="3" />
+              <circle cx="32" cy="30" r="12" />
+              <circle cx="24" cy="20" r="4" />
+              <circle cx="28" cy="13" r="3" />
+              <circle cx="34" cy="15" r="2" />
+            </g>
+          </svg>
+        </div>
+        <div class="meta-row">
+          <a class="download" href="./seanslab-mark.svg">SVG</a>
+          <a class="download" href="./seanslab-mark.png">PNG 2048</a>
+          <a class="download" href="./seanslab-mark-1024.png">PNG 1024</a>
+          <a class="download" href="./seanslab-mark-512.png">PNG 512</a>
+          <a class="download" href="./seanslab-mark-256.png">PNG 256</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>The construction</h2>
+        <div class="sub">Fibonacci blueprint</div>
+        <div class="mark-stage" style="padding: 18px;">
+          <img src="./seanslab-mark-construction.svg" alt="Seanslab mark construction" style="width: 100%; height: 100%;" />
+        </div>
+        <div class="meta-row">
+          <a class="download" href="./seanslab-mark-construction.svg">SVG</a>
+          <a class="download" href="./seanslab-mark-construction.png">PNG</a>
+        </div>
+      </section>
+    </div>
+
+    <section class="story">
+      <h2>Story</h2>
+      <p>
+        Six circles and two rounded rectangles. Nothing else. The big round
+        butt is the dominant mass. The head is a smaller circle peeking out
+        behind it. The trunk is a tapering cascade of three dots. The eye is a
+        small cutout in the head. The legs are two thin rectangles dropping
+        below the body.
+      </p>
+      <p>
+        Adjacent pairs of circles are tangent with a small overlap so the
+        silhouette reads as a single body rather than loose parts. The trunk
+        reads as a curl because its three circles trace a 90&deg; clockwise
+        rotation: 135&deg; from the head, then 45&deg;, then &minus;45&deg;.
+        That is the only thing making the curl a curl.
+      </p>
+      <div class="sequence">
+        <div class="fib"><strong>r 26</strong> <span>body</span></div>
+        <div class="fib"><strong>r 12</strong> <span>head</span></div>
+        <div class="fib"><strong>r 4</strong> <span>trunk 1</span></div>
+        <div class="fib"><strong>r 3</strong> <span>trunk 2</span></div>
+        <div class="fib"><strong>r 2</strong> <span>trunk 3</span></div>
+        <div class="fib"><strong>r 1.8</strong> <span>eye</span></div>
+        <div class="fib"><strong>10 &times; 16</strong> <span>leg</span></div>
+      </div>
+    </section>
+
+    <section class="story">
+      <h2>Scale test</h2>
+      <p>The same SVG, rendered at decreasing pixel sizes &mdash; favicon up to avatar.</p>
+      <div class="sizes">
+        <div class="size-sample s16">
+          <div class="box">
+            <svg viewBox="0 0 100 100">
+              <defs><mask id="e16"><rect width="100" height="100" fill="white"/><circle cx="28" cy="30" r="1.8" fill="black"/></mask></defs>
+              <g fill="currentColor" mask="url(#e16)">
+                <circle cx="54" cy="54" r="26" />
+                <rect x="40" y="78" width="10" height="16" rx="3" />
+                <rect x="58" y="78" width="10" height="16" rx="3" />
+                <circle cx="32" cy="30" r="12" />
+                <circle cx="24" cy="20" r="4" />
+                <circle cx="28" cy="13" r="3" />
+                <circle cx="34" cy="15" r="2" />
+              </g>
+            </svg>
+          </div>
+          <span class="label">16 px</span>
+        </div>
+        <div class="size-sample s32">
+          <div class="box">
+            <svg viewBox="0 0 100 100">
+              <defs><mask id="e32"><rect width="100" height="100" fill="white"/><circle cx="28" cy="30" r="1.8" fill="black"/></mask></defs>
+              <g fill="currentColor" mask="url(#e32)">
+                <circle cx="58" cy="60" r="21" />
+                <rect x="44" y="81" width="8" height="13" rx="3" />
+                <rect x="64" y="81" width="8" height="13" rx="3" />
+                <circle cx="35" cy="37" r="13" />
+                <circle cx="23" cy="25" r="5" />
+                <circle cx="28" cy="20" r="3" />
+                <circle cx="31" cy="23" r="2" />
+              </g>
+            </svg>
+          </div>
+          <span class="label">32 px</span>
+        </div>
+        <div class="size-sample s64">
+          <div class="box">
+            <svg viewBox="0 0 100 100">
+              <defs><mask id="e64"><rect width="100" height="100" fill="white"/><circle cx="28" cy="30" r="1.8" fill="black"/></mask></defs>
+              <g fill="currentColor" mask="url(#e64)">
+                <circle cx="58" cy="60" r="21" />
+                <rect x="44" y="81" width="8" height="13" rx="3" />
+                <rect x="64" y="81" width="8" height="13" rx="3" />
+                <circle cx="35" cy="37" r="13" />
+                <circle cx="23" cy="25" r="5" />
+                <circle cx="28" cy="20" r="3" />
+                <circle cx="31" cy="23" r="2" />
+              </g>
+            </svg>
+          </div>
+          <span class="label">64 px</span>
+        </div>
+        <div class="size-sample s128">
+          <div class="box">
+            <svg viewBox="0 0 100 100">
+              <defs><mask id="e128"><rect width="100" height="100" fill="white"/><circle cx="28" cy="30" r="1.8" fill="black"/></mask></defs>
+              <g fill="currentColor" mask="url(#e128)">
+                <circle cx="58" cy="60" r="21" />
+                <rect x="44" y="81" width="8" height="13" rx="3" />
+                <rect x="64" y="81" width="8" height="13" rx="3" />
+                <circle cx="35" cy="37" r="13" />
+                <circle cx="23" cy="25" r="5" />
+                <circle cx="28" cy="20" r="3" />
+                <circle cx="31" cy="23" r="2" />
+              </g>
+            </svg>
+          </div>
+          <span class="label">128 px</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="story starchart">
+      <h2>Bonus · the constellation</h2>
+      <p>
+        Take only the center point of each shape &mdash; the six circles and
+        the two legs. Plot them on a dark sky. The result is an asterism: a
+        five-star curl at the top (trunk and head), one bright star in the
+        middle (the body), and two feet at the base. We named it
+        <strong>Elephantulus</strong> &mdash; the little elephant. A calf
+        glancing back, held still in starlight.
+      </p>
+      <div class="starchart-stage">
+        <img src="./seanslab-mark-starchart.svg" alt="Elephantulus star chart" />
+      </div>
+      <div class="meta-row">
+        <a class="download" href="./seanslab-mark-starchart.svg">SVG</a>
+        <a class="download" href="./seanslab-mark-starchart.png">PNG</a>
+      </div>
+    </section>
+
+    <p class="note">Files also live in this directory. The pre-approved mark is retained as <code style="font-family:inherit">seanslab-mark-classic.svg</code>.</p>
+  </main>
+</body>
+</html>

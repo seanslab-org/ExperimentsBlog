@@ -100,6 +100,24 @@ When people say a dish has "complex layers of flavor," what they really mean is:
 
 ---
 
+## Four Masters, One Memory
+
+Twenty-something years ago, I wrote firmware at **Zoran**, a DVD decoder chip company. Those chips hid a quiet kind of war inside them: a single SDRAM — 64 Mbit (8 MB), running at 133 MHz — shared by four hungry masters. An MPEG-2 video decoder. An AC-3 audio decoder. A DVD servo controller tracking the laser head. And a main CPU running the UI, the menus, the subtitles.
+
+All four wanted the bus. None of them could wait.
+
+The video decoder had to spit out YUV frames on an NTSC clock — 29.97 frames per second, no mercy. A late frame was a green smear across someone's television. The audio decoder needed very little bandwidth, but its output buffer could never go dry; if it did, the speaker went *pop* — more offensive to the ear than any visual glitch to the eye. The servo ran a kilohertz-rate PID loop tracking a laser beam against a spinning disc, compensating for eccentricity and vibration; miss one interrupt window and the head skated off the track, the disc unreadable. The CPU had the lowest priority — but stall it for more than a few hundred milliseconds and the remote control stopped responding. Customer service heard about all of these.
+
+Part of my job was to carve that memory bus into time slots. Video got long continuous bursts. Audio got the highest preemption priority for short reads. The servo got hard real-time guarantees. The CPU got the crumbs. We interleaved the SDRAM banks so video could read bank 0 while audio wrote bank 1, avoiding precharge penalties. We tuned refresh scheduling, row-hit rates, arbiter weights — week after week, for a chip that would sell for a few dollars in a player that would sell for fifty.
+
+That was the first time I understood, in my bones, what "bandwidth" really means. It was never about how many bits per second flowed through the pipe in total. It was about **who got what, when, and what broke if they didn't**.
+
+The same fight is playing out today at six orders of magnitude more scale — hundreds of gigabytes per second of HBM instead of 500 megabytes per second of SDRAM, thousands of CUDA cores instead of four IP blocks, LLM inference instead of DVD playback. But the shape is identical. Deadlines. Priorities. A shared medium. Somewhere, something always pops. Something's laser skates off the track. Something paints green across a screen.
+
+Whales hit this wall in the ocean. DNA hits it one nucleotide at a time. Your nervous system hits it a hundred million to one. Engineers hit it in silicon. And in 1948, a 32-year-old mathematician finally wrote down why.
+
+---
+
 ## A 32-Year-Old Mathematician Already Figured It Out
 
 In 1948, a young man at Bell Labs named **Claude Shannon** published a paper that essentially invented information theory.
